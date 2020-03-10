@@ -283,39 +283,6 @@ a {
 }
 
 
-/*menu-bar*/
-#menu-bar {
-    width: 1200px;
-    height: 64px;
-}
-
-#menu-bar .menu-cell {
-    width: 200px;
-    height: 65px;
-    color: #FFFFFF;
-    margin: 0;
-}
-
-#menubar .menu-cell-on {
-    display: inline;
-    width: 200px;
-    height: 64px;
-    color: #F2B470;
-}
-
-#menubar .menu-text {
-    width: 68px;
-    height: 21px;
-    font-family: NanumGothic;
-    font-size: 18px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.17;
-    letter-spacing: normal;
-    text-align: center;
-    color: #ffffff;
-}
 
 /* 메뉴 추가를 위해 만들음 */
 #menu-bar,
@@ -357,13 +324,20 @@ a {
 #menu-bar > li > a {
     display: table-cell;
     color: black;
-
-    font-size: 14px;
-    text-align: center;
-
-    letter-spacing: 1px;
     background: white;
 
+    font-family: NanumGothic;
+    font-size: 18px;
+    font-weight: bold;
+    
+    font-stretch: normal;
+    font-style: normal;
+    text-align: center;
+    
+    line-height: 1.17;
+    letter-spacing: normal;
+    text-align: center;
+    
     outline: inherit;
     outline-color: black;
 }
