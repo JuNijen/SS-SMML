@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<!--위에 왜 -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <title>[##_page_title_##]</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900|Noto+Serif+KR:200,300,400,500,600,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--마우스 클릭 동작을 위하여 추가-->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+
+    <style tye="text/css">
+        body,
+        input,
+        select,
+        textarea,
+        button {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        <s_if_var_highlight-color>
+
+        /* 104 Responsive Reservation1 */
+        .social-link a:hover,
+        #header .category a:hover,
+        #header .category>ul>li>a:hover,
+        #header .category>ul>li>ul>li>a:hover,
+        .sidebar ul li a:hover,
+        .box_aside .tt-calendar tbody td a,
+        .box_aside .tt-calendar tbody td .cal_click,
+        #footer .blog-menu ul li:hover a,
+        .cover-thumbnail-list ul li a:hover .title,
+        .cover-masonry ul li a:hover .title,
+        .cover-list ul li a:hover .title,
+        .cover-banner,
+        .post-item:hover .title,
+        .hgroup .post-meta a:hover,
+        .tags .items a:hover,
+        .related-articles ul li a:hover .title,
+        .sidebar .search input {
+            color: [##_var_highlight-color_##] !important;
+        }
+
+        .pagination .prev:hover,
+        .pagination .next:hover,
+        .pagination .view-more:hover,
+        .pagelist .pagination a:hover span:not(.selected) {
+            color: [##_var_highlight-color_##] !important;
+            border: 1px solid [##_var_highlight-color_##] !important;
+        }
+
+        .pagelist .pagination .selected,
+        .pagelist .pagination a:hover .selected,
+        .pagelist .pagination .view-more:hover {
+            border: 1px solid [##_var_highlight-color_##] !important;
+            background: [##_var_highlight-color_##] !important;
+        }
+
+        .sidebar .search button,
+        .box_aside .list_tag .link_tag:hover,
+        .box_aside .link_more,
+        .cover-thumbnail-list ul li .text-box:hover,
+        .cover-banner ul li .more-btn:hover {
+            background-color: [##_var_highlight-color_##] !important;
+        }
+
+        .content-bg {
+            background-color: [##_var_content-bg_##];
+        }
+
+        </s_if_var_highlight-color><s_if_var_blogmenu-color>#header .blog-menu ul li a {
+            color: [##_var_blogmenu-color_##] !important;
+        }
+
+        </s_if_var_blogmenu-color><s_if_var_header-bg-color>#header {
+            background-color: [##_var_header-bg-color_##] !important;
+        }
+
+        </s_if_var_header-bg-color>
+    </style>
+</head>
+
+<body id="[##_body_id_##]" class="
+cover-slider-content 
+place-thumbnail 
+narrow-header 
+<s_if_var_center-header> center-header</s_if_var_center-header>
+<s_if_var_category-position> [##_var_category-position_##]</s_if_var_category-position>
+<s_if_var_sidebar-position> [##_var_sidebar-position_##]</s_if_var_sidebar-position>
+<s_if_var_paging-type> [##_var_paging-type_##]</s_if_var_paging-type>
+<s_if_var_font-type> [##_var_font-type_##]</s_if_var_font-type>
+<s_if_var_body-bg> body-bg</s_if_var_body-bg>
+<s_if_var_header-bg> header-bg</s_if_var_header-bg>
+<s_if_var_recent-posttype> sidebar-thumbnail-on</s_if_var_recent-posttype>
+<s_if_var_narrow-content> narrow-content</s_if_var_narrow-content>
+<s_if_var_Borderless-header> Borderless-header</s_if_var_Borderless-header>
+<s_if_var_Borderless-menu> Borderless-menu</s_if_var_Borderless-menu>
+<s_if_var_Borderless-sidebar> Borderless-sidebar</s_if_var_Borderless-sidebar>
+<s_if_var_short-excerpt> short-excerpt</s_if_var_short-excerpt>
+<s_if_var_Borderless-footer> Borderless-footer</s_if_var_Borderless-footer>" <s_if_var_background-color> style="background-color:[##_var_background-color_##]"</s_if_var_background-color>>
+
+    <s_t3>
+        <div id="wrap">
+
+            <header id="header">
+                <div class="inner">
+                    <div class="search">
+                        <div class="inner">
+                            <s_search>
+                                <div class="close-search"></div>
+                                <input type="text" name="[##_search_name_##]" value="[##_search_text_##]" placeholder="검색어를 입력하세요." onkeypress="if (event.keyCode == 13)
+																																						 { [##_search_onclick_submit_##] }">
+                                <button type="submit" onclick="[##_search_onclick_submit_##]">검색</button>
+                            </s_search>
+                        </div>
+                    </div>
+
+                    <!--FIND::-->
+                    <!--left top logo-->
+                    <header id="title-img">
+                        <div class="title-logo">
+                            <a href="[##_blog_link_##]"><img src="./images/logo.png" a href="[##_blog_link_##]" alt="logo"></a>
+                        </div>
+                        <div class="title-textimg">
+                            <img src="./images/textimg.png" alt="logo">
+                        </div>
+                    </header>
+                </div>
+            </header>
+        </div>
+
+        <!--배너 하단 메뉴-->
+        <div id="menu-bar">
+            <li class="active"><a href='#'>교육자료</a></li>
+            <li><a href='#'>월간소식</a></li>
+            <li><a href='#'>센터발간물</a></li>
+            <li><a href='#'>자료집</a></li>
+            <li><a href='#'>가이드북</a></li>
+            <li><a href='#'>전체 카테고리</a></li>
+        </div>
+
+        <div id = "category-text">
+            <div class = "category-text-title">MAGAZINE</div>
+            <div class = "category-text-sub">한눈에 확인하세요</div>
+        </div>
+        
+
+        <hr />
+        <div class="inner">
+            <div class="content-bg">
+
+                <section class="container">
+                    <div class="inner">
+
+
+                        <s_cover_group>
+                            <s_cover_rep>
+
+                                <s_cover name='cover-list'>
+                                    <div class="cover-wrap cover-list">
+                                        <div class="inner">
+                                            <ul>
+                                                <s_cover_item>
+                                                    <li>
+                                                        <a href="[##_cover_item_url_##]">
+                                                            <div class="article-info">
+                                                                <span class="thum">
+                                                                    <s_cover_item_thumbnail><img src="//i1.daumcdn.net/thumb/C200x200/?fname=[##_cover_item_thumbnail_##]" alt=""></s_cover_item_thumbnail>
+                                                                </span>
+                                                            </div>
+                                                            <div class="article-info">
+                                                                <span class="title">[##_cover_item_title_##]</span>
+                                                                <span class="excerpt">[##_cover_item_summary_##]</span>
+                                                                <s_cover_item_article_info>
+                                                                    <span class="category">[##_cover_item_category_##]</span>
+                                                                </s_cover_item_article_info>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </s_cover_item>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </s_cover>
+
+                            </s_cover_rep>
+                        </s_cover_group>
+
+                        <s_page_rep>
+                            <div class="hgroup">
+                                <h1> >[##_article_rep_title_##]</h1>
+                            </div>
+                            <div class="entry-content">
+                                [##_article_rep_desc_##]
+                            </div>
+                        </s_page_rep>
+
+                        <s_notice_rep>
+                            <div class="hgroup">
+                                <h1>[##_notice_rep_title_##]</h1>
+                                <div class="post-meta">
+                                    <span class="author">[##_notice_rep_author_##]</span>
+                                    <span class="date">
+                                        <s_if_var_short-date>[##_notice_rep_simple_date_##]</s_if_var_short-date>
+                                        <s_not_var_short-date>[##_notice_rep_date_##]</s_not_var_short-date>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="entry-content">
+                                [##_notice_rep_desc_##]
+                            </div>
+                        </s_notice_rep>
+
+                        <s_list>
+                            <div class="post-header">
+                                <h1>[##_list_conform_##]</h1>
+                            </div>
+                        </s_list>
+
+                        <s_article_protected>
+                            <s_index_article_rep>
+                                <div class="post-item">
+                                    <a href="[##_article_rep_link_##]">
+                                        <div class="article-info">
+                                            <span class="thum"></span>
+                                        </div>
+                                        <div class="article-info">
+                                            <span class="title">[##_article_rep_title_##]</span>
+                                            <span class="excerpt protected">보호되어 있는 글입니다.</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </s_index_article_rep>
+                            <s_permalink_article_rep>
+                                <div class="hgroup">
+                                    <div class="category">보호글</div>
+                                    <h1>[##_article_rep_title_##] </h1>
+                                    <div class="post-meta">
+                                        <span class="author">[##_article_rep_author_##]</span>
+                                        <span class="date">
+                                            <s_if_var_short-date>[##_article_rep_simple_date_##]</s_if_var_short-date>
+                                            <s_not_var_short-date>[##_article_rep_date_##]</s_not_var_short-date>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="entry-content">
+                                    [##_article_rep_desc_##]
+                                    <form class="protected_form" onsubmit="[##_article_dissolve_##]">
+                                        <p>보호되어 있는 글입니다.<br>
+                                            내용을 보시려면 비밀번호를 입력하세요.</p>
+                                        <fieldset>
+                                            <input type="password" id="[##_article_password_##]" name="[##_article_password_##]" value="" placeholder="비밀번호" />
+                                            <button type="submit" class="btn">입력</button>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </s_permalink_article_rep>
+                        </s_article_protected>
+
+                        <s_article_rep>
+                            <s_index_article_rep>
+                                <div class="post-item">
+                                    <a href="[##_article_rep_link_##]">
+                                        <div class="article-info">
+                                            <span class="thum">
+                                                <s_article_rep_thumbnail>
+                                                    <img src="//i1.daumcdn.net/thumb/C200x200/?fname=[##_article_rep_thumbnail_raw_url_##]" alt="">
+                                                </s_article_rep_thumbnail>
+                                            </span>
+                                        </div>
+                                        <div class="article-info">
+                                            <span class="title">[##_article_rep_title_##]</span>
+                                            <s_if_var_view-thumbnail-excerpt>
+                                                <span class="excerpt">[##_article_rep_summary_##]</span>
+                                            </s_if_var_view-thumbnail-excerpt>
+                                            <span class="category">[##_article_rep_category_##]</span>
+                                            <s_if_var_view-thumbnail-date>
+                                                <span class="date">
+                                                    <s_if_var_short-date>[##_article_rep_simple_date_##]</s_if_var_short-date>
+                                                    <s_not_var_short-date>[##_article_rep_date_##]</s_not_var_short-date>
+                                                </span>
+                                            </s_if_var_view-thumbnail-date>
+                                        </div>
+                                    </a>
+                                </div>
+                            </s_index_article_rep>
+                            <s_permalink_article_rep>
+                                <div class="hgroup">
+                                    <div class="category">[##_article_rep_category_##]</div>
+                                    <h1>[##_article_rep_title_##] </h1>
+                                    <div class="post-meta">
+                                        <span class="author">[##_article_rep_author_##]</span>
+                                        <span class="date">
+                                            <s_if_var_short-date>[##_article_rep_simple_date_##]</s_if_var_short-date>
+                                            <s_not_var_short-date>[##_article_rep_date_##]</s_not_var_short-date>
+                                        </span>
+                                        <s_ad_div>
+                                            <span><a id="ad_edit" href="[##_s_ad_m_link_##]">수정</a></span>
+                                            <span><a id="ad_del" href="#" onclick="[##_s_ad_d_onclick_##]">삭제</a></span>
+                                        </s_ad_div>
+                                    </div>
+                                </div>
+                                <div class="entry-content">
+                                    [##_article_rep_desc_##]
+                                </div>
+                                <s_tag_label>
+                                    <div class="tags">
+                                        <h2>태그</h2>
+                                        <div class="items">
+                                            [##_tag_label_rep_##]
+                                        </div>
+                                    </div>
+                                </s_tag_label>
+
+                                <s_article_related>
+                                    <div class="related-articles">
+                                        <h2>'[##_article_rep_category_##]' 관련글</h2>
+                                        <ul>
+                                            <s_article_related_rep>
+                                                <li>
+                                                    <a href="[##_article_related_rep_link_##]">
+                                                        <span class="thum">
+                                                            <s_article_related_rep_thumbnail>
+                                                                <img src="//i1.daumcdn.net/thumb/C264x200/?fname=[##_article_related_rep_thumbnail_link_##]" alt="">
+                                                            </s_article_related_rep_thumbnail>
+                                                        </span>
+                                                        <span class="title">[##_article_related_rep_title_##]</span>
+                                                    </a>
+                                                </li>
+                                            </s_article_related_rep>
+                                        </ul>
+                                    </div>
+                                </s_article_related>
+
+                                <s_rp>
+                                    <div class="comments">
+                                        <s_rp_container>
+                                            <div class="comment-list">
+                                                <ul>
+                                                    <s_rp_rep>
+                                                        <li id="[##_rp_rep_id_##]">
+                                                            <div class="author-meta">
+                                                                <img src="[##_rp_rep_logo_##]" class="avatar" alt="">
+                                                                <span class="nickname">[##_rp_rep_name_##]</span>
+                                                                <span class="date">
+                                                                    [##_rp_rep_date_##]
+                                                                </span>
+                                                                <span class="control">
+                                                                    <a href="[##_rp_rep_link_##]">댓글주소</a>
+                                                                    <a href="#" class="editdel" onclick="[##_rp_rep_onclick_delete_##]">수정/삭제</a>
+                                                                    <a href="#" onclick="[##_rp_rep_onclick_reply_##]">댓글쓰기</a>
+                                                                </span>
+                                                            </div>
+                                                            <p>[##_rp_rep_desc_##]</p>
+                                                            <s_rp2_container>
+                                                                <ul>
+                                                                    <s_rp2_rep>
+                                                                        <li id="[##_rp_rep_id_##]">
+                                                                            <div class="author-meta">
+                                                                                <img src="[##_rp_rep_logo_##]" class="avatar" alt="">
+                                                                                <span class="nickname">[##_rp_rep_name_##]</span>
+                                                                                <span class="date">
+                                                                                    [##_rp_rep_date_##]
+                                                                                </span>
+                                                                                <span class="control">
+                                                                                    <a href="[##_rp_rep_link_##]">댓글주소</a>
+                                                                                    <a href="#" onclick="[##_rp_rep_onclick_delete_##]">수정/삭제</a>
+                                                                                </span>
+                                                                            </div>
+                                                                            <p>[##_rp_rep_desc_##]</p>
+                                                                        </li>
+                                                                    </s_rp2_rep>
+                                                                </ul>
+                                                            </s_rp2_container>
+                                                        </li>
+                                                    </s_rp_rep>
+                                                </ul>
+                                            </div>
+                                        </s_rp_container>
+                                        <s_rp_input_form>
+                                            <div class="comment-form">
+                                                <s_rp_member>
+                                                    <div class="field">
+                                                        <s_rp_guest>
+                                                            <input type="text" name="[##_rp_input_name_##]" value="[##_guest_name_##]" placeholder="이름">
+                                                            <input type="password" name="[##_rp_input_password_##]" value="[##_rp_admin_check_##]" placeholder="암호">
+                                                        </s_rp_guest>
+                                                        <div class="secret">
+                                                            <input type="checkbox" name="[##_rp_input_is_secret_##]" id="secret">
+                                                            <label for="secret" tabindex="0">Secret</label>
+                                                        </div>
+                                                    </div>
+                                                </s_rp_member>
+                                                <textarea name="[##_rp_input_comment_##]_alt" cols="" rows="4" placeholder="여러분의 소중한 댓글을 입력해주세요."></textarea>
+                                                <div>
+                                                    <button type="submit" class="submit" onclick="[##_rp_onclick_submit_##]">댓글달기</button>
+                                                </div>
+                                            </div>
+                                            <script>
+                                                $(document).ready(function() {
+                                                    if (!breserve_post) {
+                                                        $('div.comment-form textarea').attr("name", "[##_rp_input_comment_##]");
+                                                        $('div.comment-form button').attr("name", "");
+                                                    }
+                                                    if ($('#inputCaptcha').length) {
+                                                        if ($('#tt_captChaBottom').length) {
+                                                            $('#tt_captChaBottom').remove();
+                                                        }
+                                                        if ($('#tt_captChaBox').length) {
+                                                            $('#tt_captChaBox').remove();
+                                                        }
+                                                    }
+                                                    if (!$('#regen').length) {
+                                                        resetReservationForm();
+                                                    }
+                                                });
+                                            </script>
+                                        </s_rp_input_form>
+                                    </div>
+                                </s_rp>
+
+                            </s_permalink_article_rep>
+                        </s_article_rep>
+
+                        <s_tag>
+                            <div class="hgroup">
+                                <h1>태그</h1>
+                            </div>
+                            <div class="tags">
+                                <div class="items">
+                                    <s_tag_rep>
+                                        <a href="[##_tag_link_##]">[##_tag_name_##]</a>
+                                    </s_tag_rep>
+                                </div>
+                            </div>
+                        </s_tag>
+
+                        <s_guest>
+                            <div class="hgroup">
+                                <h1>방명록</h1>
+                            </div>
+                            <div class="comments">
+                                <s_guest_input_form>
+                                    <div class="comment-form">
+                                        <s_guest_member>
+                                            <div class="field">
+                                                <s_guest_form>
+                                                    <input type="text" name="[##_guest_input_name_##]" value="[##_guest_name_##]" placeholder="이름">
+                                                    <input type="password" name="[##_guest_input_password_##]" value="[##_guest_password_##]" placeholder="암호">
+                                                </s_guest_form>
+                                            </div>
+                                        </s_guest_member>
+                                        <textarea name="[##_guest_textarea_body_##]" cols="" rows="4"></textarea>
+                                        <div class="submit">
+                                            <button type="submit" class="btn" onclick="[##_guest_onclick_submit_##]">안부 남기기</button>
+                                        </div>
+                                    </div>
+                                </s_guest_input_form>
+
+                                <s_guest_container>
+                                    <div class="comment-list">
+                                        <ul>
+                                            <s_guest_rep>
+                                                <li id="[##_guest_rep_id_##]">
+                                                    <div class="author-meta">
+                                                        <img src="//t1.daumcdn.net/tistory_admin/static/skin/avatar_default.gif" class="avatar" alt="">
+                                                        <span class="nickname">[##_guest_rep_name_##]</span>
+                                                        <span class="date">
+                                                            [##_guest_rep_date_##]
+                                                        </span>
+                                                        <span class="control">
+                                                            <a href="#" onclick="[##_guest_rep_onclick_delete_##]">수정/삭제</a>
+                                                            <a href="#" onclick="[##_guest_rep_onclick_reply_##]">댓글쓰기</a>
+                                                        </span>
+                                                    </div>
+                                                    <p>[##_guest_rep_desc_##]</p>
+                                                    <s_guest_reply_container>
+                                                        <ul>
+                                                            <s_guest_reply_rep>
+                                                                <li id="[##_guest_rep_id_##]">
+                                                                    <div class="author-meta">
+                                                                        <img src="//t1.daumcdn.net/tistory_admin/static/skin/avatar_default.gif" class="avatar" alt="">
+                                                                        <span class="nickname">[##_guest_rep_name_##]</span>
+                                                                        <span class="date">
+                                                                            [##_guest_rep_date_##]
+                                                                        </span>
+                                                                        <span class="control">
+                                                                            <a href="#" onclick="[##_guest_rep_onclick_delete_##]">수정/삭제</a>
+                                                                        </span>
+                                                                    </div>
+                                                                    <p>[##_guest_rep_desc_##]</p>
+                                                                </li>
+                                                            </s_guest_reply_rep>
+                                                        </ul>
+                                                    </s_guest_reply_container>
+                                                </li>
+                                            </s_guest_rep>
+                                        </ul>
+                                    </div>
+                                </s_guest_container>
+                            </div>
+                        </s_guest>
+
+                    </div>
+
+                    <s_paging>
+                        <div class="pagination">
+                            <div class="inner">
+                                <a [##_prev_page_##] class="prev [##_no_more_prev_##]"><span>이전</span></a>
+                                <s_paging_rep>
+                                    <a [##_paging_rep_link_##]>[##_paging_rep_link_num_##]</a>
+                                </s_paging_rep>
+                                <a [##_next_page_##] class="next [##_no_more_next_##]"><span>다음</span></a>
+                            </div>
+                        </div>
+                    </s_paging>
+                </section>
+            </div><!-- "section .inner" -->
+
+            <hr>
+
+
+
+
+            <footer id="footer">
+
+                <div class="inner">
+                    <s_if_var_footer-image>
+                        <p class="footer-image"><img src="[##_var_footer-image_##]" alt="푸터 이미지"></p>
+                    </s_if_var_footer-image>
+                    <s_if_var_footer-text>
+                        <p class="footer-text">[##_var_footer-text_##]</p>
+                    </s_if_var_footer-text>
+                    <p class="copyright">서울마을미디어매거진</p>
+
+                </div>
+
+            </footer>
+
+
+            <div></div>
+
+            <s_if_var_view-btn-top>
+                <a href="#top" class="btn-top hideanim"><i class="fas fa-arrow-up"></i></a>
+            </s_if_var_view-btn-top>
+
+        </div>
+
+        <script src="./images/script.js"></script>
+        <script src="./images/calendar.js"></script>
+        <script src="./images/reservation.js"></script>
+        <link rel="stylesheet" href="./images/calendar.css" />
+        <link rel="stylesheet" href="./images/reservation.css" />
+
+        
+    
+        <script>
+            // 참고자료 :: https://ukeit.tistory.com/4
+            // 2020-03-10
+
+            $(function() {
+                //  ul > li 이를 sBtn으로 칭한다. (클릭이벤트는 li에 적용 된다.)
+                var sBtn = $("li"); 
+                
+                // sBtn에 속해 있는  a 찾아 클릭 하면.
+                sBtn.find("a").click(function() {
+                    // sBtn 속에 (active) 클래스를 삭제 한다.
+                    sBtn.removeClass("active");
+                    // 클릭한 a에 (active)클래스를 넣는다.
+                    $(this).parent().addClass("active");
+                })
+            })
+        </script>
+    </s_t3>
+</body>
+
+</html>
