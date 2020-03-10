@@ -320,45 +320,52 @@ a {
 /* 메뉴 추가를 위해 만들음 */
 #menu-bar,
 #menu-bar li,
-#menu-bar li a,
-#menu-bar #menu-button {
+#menu-bar li a {
+    display: table-cell;
+
     width: 200px;
     height: 64px;
-    
+
     margin: 0;
     padding: 0;
     border: 0;
-    
-    display: block;
+
     position: relative;
     vertical-align: middle;
 }
 
 #menu-bar {
-    display: table-cell;
+    background: white;
+    
     width: 1920px;
     height: 64px;
+
     font-family: Raleway, sans-serif;
+
+    border-bottom: 1px solid #DCDCDC;
 }
 
-#menu-bar > li
-{
+#menu-bar > li {
     display: table-cell;
     color: white;
-    
+
     float: left;
     position: relative;
+    border-left: 1px solid #DCDCDC;
 }
 
 #menu-bar > li > a {
     display: table-cell;
     color: black;
-    
+
     font-size: 14px;
     text-align: center;
 
     letter-spacing: 1px;
     background: white;
+
+    outline: inherit;
+    outline-color: black;
 }
 
 #menu-bar > li:hover > a,
@@ -378,35 +385,50 @@ a {
 
 
 /* 특정 텍스트 스타일 지정 위해 만들음 */
-#category-text,
-#category-text .category-text-sub
-{
-    width: 125px;
+#category-text {
+    display: table-row;
+    width: 100%;
+    height: 157.5px;
+
+    align-content: center;
+}
+
+#category-text .category-text-sub {
+    display: contents width: 125px;
     height: 19px;
+
     font-family: NanumGothic;
     font-size: 16px;
+
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.19;
+
     letter-spacing: normal;
     text-align: center;
     color: #333333;
+
+    margin-bottom: 30px;
 }
-#category-text .category-text-title
-{
-    width: 106px;
+
+#category-text .category-text-title {
+    display: contents width: 106px;
     height: 23px;
+
     font-family: NanumGothic;
     font-size: 20px;
+
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.15;
+
     letter-spacing: normal;
     text-align: center;
     color: #333333;
-    
+
+    margin-top: 80.5px;
     margin-bottom: 5px;
 }
 
