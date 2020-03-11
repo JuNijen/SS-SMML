@@ -323,7 +323,7 @@ a {
 
 #menu-bar > li > a {
     display: table-cell;
-    color: black;
+    color: #333333;
     background: white;
 
     font-family: NanumGothic;
@@ -368,7 +368,8 @@ a {
 }
 
 #category-text .category-text-sub {
-    display: contents width: 125px;
+    display: contents
+    width: 125px;
     height: 19px;
 
     font-family: NanumGothic;
@@ -387,7 +388,8 @@ a {
 }
 
 #category-text .category-text-title {
-    display: contents width: 106px;
+    display: contents
+    width: 106px;
     height: 23px;
 
     font-family: NanumGothic;
@@ -406,6 +408,41 @@ a {
     margin-bottom: 5px;
 }
 
+
+.wrapper > div{
+    
+}
+ .wrapper > div:nth-child(odd) {
+     
+}
+
+ .wrapper {
+     display: grid;
+     grid-template-columns: 360px 1200px 360px;
+     grid-template-rows: 150px 40px;
+ }
+
+#content-preview {
+    display: table-row;
+
+    width: 100%;
+    height: 220px;
+
+    align-content: center;
+}
+
+ #content-preview .thumbnail-image {
+     display: table-cell;
+     width: 180px;
+     height: 220px;
+
+     float: left;
+     position: relative;
+
+     border: solid 1px #e8e8e8;
+
+     margin-right: 24px;
+ }
 
 
 /* 이동성을 위해 #header 하위로 넣지 않음. */
