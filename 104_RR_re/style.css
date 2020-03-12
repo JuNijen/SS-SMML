@@ -415,20 +415,28 @@ a {
     margin-bottom: 30px;
 }
 
-.wrapper > div {}
+.wrapper > div {
+    align-content: center;
+}
 
 .wrapper > div:nth-child(odd) {}
 
 .wrapper {
     display: grid;
     grid-template-columns: 360px 1200px 360px;
-    grid-template-rows: 220px;
-    grid-gap: 24px;
+    grid-template-rows: 1397px;
 }
 
 .content-container {
     display: flex;
-    height: 220px;
+    flex-flow: wrap;
+    max-width: 1230px;
+
+    width: 1230px;
+    height: 1397px;
+
+    align-content: center;
+    vertical-align: top;
 }
 
 .content-box {
@@ -437,6 +445,7 @@ a {
     height: 296px;
 
     margin-right: 24px;
+    margin-bottom: 71px;
 }
 
 .content-image {
@@ -449,13 +458,13 @@ a {
     border: solid 1px #e8e8e8;
 }
 
-.content-type{
+.content-type {
     width: 180px;
     height: 31px;
 
     float: left;
     vertical-align: center;
-    
+
     padding-bottom: 5px;
 }
 
@@ -484,7 +493,7 @@ a {
 
     text-align: left;
     color: #282f88;
-    
+
     float: left;
     padding-top: 10px;
     padding-left: 8px;
