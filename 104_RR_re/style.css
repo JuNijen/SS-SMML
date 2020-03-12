@@ -287,16 +287,13 @@ a {
 /* 메뉴 추가를 위해 만들음 */
 
 .menu-bar > div,
-.menu-bar > div:nth-child(odd)
-{
-
-}
+.menu-bar > div:nth-child(odd) {}
 
 .menu-bar {
     display: grid;
     grid-template-columns: 360px 1200px 360px;
     grid-template-rows: 64px;
-    
+
     margin: 0 auto;
 }
 
@@ -318,7 +315,7 @@ a {
 
 #menu {
     background: white;
-    
+
     width: 1920px;
     height: 64px;
 
@@ -344,15 +341,15 @@ a {
     font-family: NanumGothic;
     font-size: 18px;
     font-weight: bold;
-    
+
     font-stretch: normal;
     font-style: normal;
     text-align: center;
-    
+
     line-height: 1.17;
     letter-spacing: normal;
     text-align: center;
-    
+
     outline: inherit;
     outline-color: black;
 }
@@ -380,8 +377,7 @@ a {
 }
 
 #category-text .category-text-title {
-    display: contents
-    width: 106px;
+    display: contents width: 106px;
     height: 23px;
 
     font-family: NanumGothic;
@@ -401,8 +397,7 @@ a {
 }
 
 #category-text .category-text-sub {
-    display: contents
-    width: 125px;
+    display: contents width: 125px;
     height: 19px;
 
     font-family: NanumGothic;
@@ -420,72 +415,97 @@ a {
     margin-bottom: 30px;
 }
 
+.wrapper > div {}
 
-.wrapper > div{
-    
+.wrapper > div:nth-child(odd) {}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 360px 1200px 360px;
+    grid-template-rows: 220px;
+    grid-gap: 24px;
 }
- .wrapper > div:nth-child(odd) {
-     
+
+.content-container {
+    display: flex;
+    height: 220px;
 }
 
- .wrapper {
-     display: grid;
-     grid-template-columns: 360px 1200px 360px;
-     grid-template-rows: 220px;
-     grid-gap: 24px;
- }
+.content-box {
+    float: left;
+    width: 180px;
+    height: 296px;
 
-#content-preview {
-    display: table-row;
+    margin-right: 24px;
+}
 
-    width: 1200px;
+.content-image {
+    width: 180px;
     height: 220px;
 
-    align-content: center;
+    align-items: center;
+    position: relative;
+
+    border: solid 1px #e8e8e8;
 }
 
- #content-preview .content {
-     display: table-cell;
-     width: 180px;
-     height: 296px;
-
-     float: left;
-     position:relative;
-
-     margin-right: 24px;
- }
-
- #content-preview .thumbnail-image {
-     display: table-cell;
-     width: 180px;
-     height: 220px;
-
-     float: left;
-     position:relative;
-
-     border: solid 1px #e8e8e8;
- }
-
-#content-preview .text
-{
-display: contents;
-
+.content-type{
     width: 180px;
-  height: 45px;
-  font-family: NanumGothic;
-  font-size: 16px;
+    height: 31px;
+
+    float: left;
+    vertical-align: center;
     
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-    
-  text-align: left;
-  color: #212121;
+    padding-bottom: 5px;
 }
 
+.content-type-icon > img {
+    width: 22px;
+    height: 9px;
 
+    /*해당 부분 padding 원래 13.2px 이나, 맞지않아 16.5로 임의 수정*/
+    padding-top: 16.5px;
+    padding-left: 5px;
+    float: left;
+}
+
+.content-type-text {
+    width: 145px;
+    height: 16px;
+    font-family: NanumGothic;
+    font-size: 14px;
+
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+
+    line-height: 1.71;
+    letter-spacing: normal;
+
+    text-align: left;
+    color: #282f88;
+    
+    float: left;
+    padding-top: 10px;
+    padding-left: 8px;
+}
+
+.content-title {
+    width: 180px;
+    height: 45px;
+    font-family: NanumGothic;
+    font-size: 16px;
+
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+
+    line-height: 1.5;
+    letter-spacing: normal;
+
+    text-align: left;
+    color: #212121;
+}
 
 
 /* 이동성을 위해 #header 하위로 넣지 않음. */
