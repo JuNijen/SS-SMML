@@ -433,7 +433,7 @@ a {
     max-width: 1230px;
 
     width: 1230px;
-    height: 1397px;
+    height: 1450px;
 
     align-content: center;
     vertical-align: top;
@@ -503,7 +503,7 @@ a {
     width: 180px;
     height: 45px;
     font-family: NanumGothic;
-    font-size: 16px;
+    font-size: 15px;
 
     font-weight: bold;
     font-stretch: normal;
@@ -518,41 +518,6 @@ a {
 
 
 /* 이동성을 위해 #header 하위로 넣지 않음. */
-.blogger-profile {
-    margin: 20px auto 0;
-}
-
-.blogger-profile .inner {
-    height: 100%;
-    text-align: center;
-}
-
-.blogger-profile .txt-profile {
-    text-align: center;
-    margin: 5px 0 0;
-    font-size: 1em;
-    color: #383838;
-    line-height: 40px;
-}
-
-.blogger-profile .thumb-profile img,
-.blogger-profile .thumb-profile-small img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border: 5px solid #f8f8f8;
-}
-
-.blogger-profile .thumb-profile-middle img {
-    width: 150px;
-    height: 150px;
-    border-radius: 25%;
-}
-
-.blogger-profile .thumb-profile-big img {
-    width: 100%;
-    height: auto;
-}
 
 .social-link-wrap {
     float: right;
@@ -625,47 +590,6 @@ a {
     width: 100%;
     padding-top: 15px;
     clear: both;
-}
-
-.mobile-menu {
-    display: none;
-    top: 5px;
-    left: 5px;
-    z-index: 500;
-    width: 45px;
-    height: 45px;
-}
-
-.border-circle .mobile-menu {
-    border-radius: 25px;
-}
-
-.mobile-menu span {
-    display: none;
-}
-
-.mobile-menu:before {
-    content: "\f0c9";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    cursor: pointer;
-    font-size: 1.4em;
-    padding: 10px;
-    color: #383838;
-    box-sizing: border-box;
-}
-
-.mobile-menu.on {
-    position: fixed;
-    background-color: #f4f4f4;
-}
-
-.mobile-menu.on span {
-    display: none;
-}
-
-.mobile-menu.on:before {
-    content: "\f00d";
 }
 
 /*헤더탑 검색*/
@@ -1543,7 +1467,8 @@ a {
     width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
-    padding: 20px 0;
+
+    margin-top: 227px;
 }
 
 #footer > .inner {
