@@ -285,9 +285,24 @@ a {
 
 
 /* 메뉴 추가를 위해 만들음 */
-#menu-bar,
-#menu-bar li,
-#menu-bar li a {
+
+.menu-bar > div,
+.menu-bar > div:nth-child(odd)
+{
+
+}
+
+.menu-bar {
+    display: grid;
+    grid-template-columns: 360px 1200px 360px;
+    grid-template-rows: 64px;
+    
+    margin: 0 auto;
+}
+
+#menu,
+#menu li,
+#menu li a {
     display: table-cell;
 
     width: 200px;
@@ -301,7 +316,7 @@ a {
     vertical-align: middle;
 }
 
-#menu-bar {
+#menu {
     background: white;
     
     width: 1920px;
@@ -312,7 +327,7 @@ a {
     border-bottom: 1px solid #DCDCDC;
 }
 
-#menu-bar > li {
+#menu > li {
     display: table-cell;
     color: white;
 
@@ -321,8 +336,8 @@ a {
     border-left: 1px solid #DCDCDC;
 }
 
-#menu-bar > li > a {
-    display: table-cell;
+#menu > li > a {
+    display: gd;
     color: #333333;
     background: white;
 
@@ -342,17 +357,17 @@ a {
     outline-color: black;
 }
 
-#menu-bar > li:hover > a,
-#menu-bar > li > a:hover {
+#menu > li:hover > a,
+#menu > li > a:hover {
     color: #F2B470;
 }
 
-#menu-bar > li.active > a {
+#menu > li.active > a {
     color: white;
     background: #F2B470;
 }
 
-#menu-bar > li.active:hover > a {
+#menu > li.active:hover > a {
     text-align: center;
     color: #000000;
 }
@@ -360,31 +375,8 @@ a {
 
 /* 특정 텍스트 스타일 지정 위해 만들음 */
 #category-text {
-    display: table-row;
     width: 100%;
-    height: 157.5px;
-
     align-content: center;
-}
-
-#category-text .category-text-sub {
-    display: contents
-    width: 125px;
-    height: 19px;
-
-    font-family: NanumGothic;
-    font-size: 16px;
-
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.19;
-
-    letter-spacing: normal;
-    text-align: center;
-    color: #333333;
-
-    margin-bottom: 30px;
 }
 
 #category-text .category-text-title {
@@ -408,6 +400,26 @@ a {
     margin-bottom: 5px;
 }
 
+#category-text .category-text-sub {
+    display: contents
+    width: 125px;
+    height: 19px;
+
+    font-family: NanumGothic;
+    font-size: 16px;
+
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.19;
+
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+
+    margin-bottom: 30px;
+}
+
 
 .wrapper > div{
     
@@ -419,17 +431,29 @@ a {
  .wrapper {
      display: grid;
      grid-template-columns: 360px 1200px 360px;
-     grid-template-rows: 150px 40px;
+     grid-template-rows: 220px;
+     grid-gap: 24px;
  }
 
 #content-preview {
     display: table-row;
 
-    width: 100%;
+    width: 1200px;
     height: 220px;
 
     align-content: center;
 }
+
+ #content-preview .content {
+     display: table-cell;
+     width: 180px;
+     height: 296px;
+
+     float: left;
+     position:relative;
+
+     margin-right: 24px;
+ }
 
  #content-preview .thumbnail-image {
      display: table-cell;
@@ -437,12 +461,31 @@ a {
      height: 220px;
 
      float: left;
-     position: relative;
+     position:relative;
 
      border: solid 1px #e8e8e8;
-
-     margin-right: 24px;
  }
+
+#content-preview .text
+{
+display: contents;
+
+    width: 180px;
+  height: 45px;
+  font-family: NanumGothic;
+  font-size: 16px;
+    
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+    
+  text-align: left;
+  color: #212121;
+}
+
+
 
 
 /* 이동성을 위해 #header 하위로 넣지 않음. */
