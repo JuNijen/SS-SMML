@@ -109,15 +109,31 @@ narrow-header
 
             <header id="header">
                 <div class="inner">
-                    <div class="search">
-                        <div class="inner">
-                            <s_search>
-                                <div class="close-search"></div>
-                                <input type="text" name="[##_search_name_##]" value="[##_search_text_##]" placeholder="검색어를 입력하세요." onkeypress="if (event.keyCode == 13)
+
+                    <div class="menu-grid">
+
+                        <!--left search-->
+                        <div class="search">
+                            <div class="inner">
+                                <s_search>
+                                    <div class="close-search"></div>
+                                    <input type="text" name="[##_search_name_##]" value="[##_search_text_##]" placeholder="검색어를 입력하세요." onkeypress="if (event.keyCode == 13)
 																																						 { [##_search_onclick_submit_##] }">
-                                <button type="submit" onclick="[##_search_onclick_submit_##]">검색</button>
-                            </s_search>
+                                    <button type="submit" onclick="[##_search_onclick_submit_##]">검색</button>
+                                </s_search>
+                                <a class="text">검색</a>
+                            </div>
                         </div>
+
+                        <a class="text">
+                            <a class="text" href="[##_blog_link_##]">마을미디어홈</a>
+                        </a>
+                        <a class="text" href="#">매거진</a>
+
+                        <div class="login-circle">
+                            <a class="text">LOGIN</a>
+                        </div>
+
                     </div>
 
                     <!--FIND::-->
@@ -126,9 +142,20 @@ narrow-header
                         <div class="title-logo">
                             <a href="[##_blog_link_##]"><img src="./images/logo.png" a href="[##_blog_link_##]" alt="logo"></a>
                         </div>
+
                         <div class="title-textimg">
                             <img src="./images/textimg.png" alt="logo">
                         </div>
+
+                        <div class="cir-grid">
+                            <div class="cir1"></div>
+                            <div class="cir2"></div>
+                            <div class="cir3"></div>
+                        </div>
+
+                        <div class="line1" a href="#"></div>
+                        <div class="line2" a href="#"></div>
+                        <div class="line3" a href="#"></div>
                     </header>
                 </div>
             </header>
@@ -203,7 +230,7 @@ narrow-header
                         </div>
                         <div class="content-type-text">마을미디어 가이드북</div>
                     </div>
-                    <div class="content-title">떠나자! 서울마을미디어여행 시즌2 (2018)                    </div>
+                    <div class="content-title">떠나자! 서울마을미디어여행 시즌2 (2018) </div>
                 </div>
 
                 <!--1-5 그룹-->
@@ -454,7 +481,7 @@ narrow-header
             </div>
         </div>
 
-        
+
 
         <footer id="footer">
             <div class="inner">
@@ -469,7 +496,7 @@ narrow-header
             </div>
         </footer>
 
-    
+
         <s_if_var_view-btn-top>
             <a href="#top" class="btn-top hideanim"><i class="fas fa-arrow-up"></i></a>
         </s_if_var_view-btn-top>
