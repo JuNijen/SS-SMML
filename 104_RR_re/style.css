@@ -580,7 +580,7 @@ a {
     align-items: center;
 
     /*해당부분 원래 79px이었으나, 특정 상황에서 잘려보인다는 이야기가 들려 넉넉하게 수정.*/
-    width: 80px;
+    width: 85px;
     height: 18px;
 
     /*해당부분 제플린 상으로는 594px x 1481px 이나, 위에 임의값으로 함께 밀린 것으로 추정.*/
@@ -596,7 +596,8 @@ a {
 }
 
 .show-all > a {
-    width: 53px;
+	    /*해당부분 원래 53px이었으나, 특정 상황에서 잘려보인다는 이야기가 들려 넉넉하게 수정.*/
+    width: 60px;
     height: 16px;
     
     font-family: NanumGothic;
