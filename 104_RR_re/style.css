@@ -276,7 +276,7 @@ a {
     align-content: center;
     vertical-align: center;
 
-    margin-top: 34px;
+    top: 34px;
     margin-right: 360px;
     align-items: center;
     justify-content: space-between;
@@ -327,7 +327,7 @@ a {
 
 #header .search-grid
 {
-    
+    float: right;
 }
 
 #header .search > .inner {
