@@ -286,16 +286,25 @@ a {
 
 /* 메뉴 추가를 위해 만들음 */
 
-.menu-bar > div,
-.menu-bar > div:nth-child(odd) {}
-
-.menu-bar {
+.menu-bar, 
+.menu-bar > div{
     display: grid;
-    grid-template-columns: 360px 1200px 360px;
+    grid-template-columns: 1.7f 2f 1.7f;
     grid-template-rows: 64px;
+    justify-items: center;
+    
+    background: white;
+    border-bottom: 1px solid #DCDCDC;
 
-    margin: 0 auto;
+    /*임의로 정해진 값*/
+    margin-top: 21px;
 }
+
+#menu > div {
+    align-content: center;
+}
+
+#menu > div:nth-child(odd) {}
 
 #menu,
 #menu li,
@@ -311,12 +320,13 @@ a {
 
     position: relative;
     vertical-align: middle;
+    
+    border-bottom: 1px solid #DCDCDC;
 }
 
 #menu {
     background: white;
-
-    width: 1920px;
+    width: auto;
     height: 64px;
 
     font-family: Raleway, sans-serif;
@@ -325,16 +335,15 @@ a {
 }
 
 #menu > li {
-    display: table-cell;
     color: white;
-
     float: left;
     position: relative;
+    
     border-left: 1px solid #DCDCDC;
 }
 
 #menu > li > a {
-    display: gd;
+    display: table-cell;
     color: #333333;
     background: white;
 
@@ -423,8 +432,10 @@ a {
 
 .wrapper {
     display: grid;
-    grid-template-columns: 360px 1200px 360px;
-    grid-template-rows: 1397px;
+    grid-template-columns: 1.7f 2f 1.7f;
+    grid-template-rows: auto;
+    
+    justify-items: center;
 }
 
 .content-container {
@@ -433,10 +444,12 @@ a {
     max-width: 1230px;
 
     width: 1230px;
-    height: 1450px;
+    height: auto;
 
     align-content: center;
     vertical-align: top;
+    
+    justify-content: space-between;
 }
 
 .content-box {
@@ -444,7 +457,6 @@ a {
     width: 180px;
     height: 296px;
 
-    margin-right: 24px;
     margin-bottom: 71px;
 }
 
