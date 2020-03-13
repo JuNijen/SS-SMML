@@ -531,69 +531,6 @@ a {
 
 /* 이동성을 위해 #header 하위로 넣지 않음. */
 
-.social-link-wrap {
-    float: right;
-}
-
-.social-link {
-    height: 45px;
-    padding: 13px 0 7px 10px;
-    box-sizing: border-box;
-}
-
-.social-link a {
-    display: inline-block;
-    margin: 0 7px;
-    vertical-align: top;
-    font-size: 1.125em;
-    line-height: 1;
-    text-decoration: none;
-    color: #383838;
-}
-
-.social-link a:hover {
-    color: #D4AE9F;
-    cursor: pointer;
-}
-
-.social-link a div {
-    display: none;
-    float: right;
-    font-size: 0.6em;
-    margin: 6px 0 0 5px;
-}
-
-.social-link .pinterest:before {
-    content: "\f0d2";
-    font-family: "Font Awesome 5 Brands";
-}
-
-.social-link .facebook:before {
-    content: "\f09a";
-    font-family: "Font Awesome 5 Brands";
-}
-
-.social-link .twitter:before {
-    content: "\f081";
-    font-family: "Font Awesome 5 Brands";
-}
-
-.social-link .instagram:before {
-    content: "\f16d";
-    font-family: "Font Awesome 5 Brands";
-}
-
-.social-link .youtube:before {
-    content: "\f167";
-    font-family: "Font Awesome 5 Brands";
-}
-
-.social-link .email:before {
-    content: "\f0e0";
-    font-weight: 900;
-    font-family: "Font Awesome 5 Free";
-}
-
 #header > .inner > .title {
     margin: 0 auto;
     height: 60px;
