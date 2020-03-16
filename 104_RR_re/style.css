@@ -209,14 +209,14 @@ a {
 
 /* Layout Selector */
 #wrap {
-    max-width: 1920px;
+    width: 1920px;
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
 }
 
 #wrap > .inner {
-    max-width: 1920px;
+    width: 1920px;
     padding: 0;
     margin: 0 auto;
     box-sizing: border-box;
@@ -229,7 +229,7 @@ a {
 
 #header {
     position: relative;
-    width: 100%;
+    width: 1920px;
     height: 420px;
     box-sizing: border-box;
     background-size: cover;
@@ -252,7 +252,7 @@ a {
 }
 
 #header > .inner {
-    max-width: 1920px;
+    width: 1920px;
     margin: 0 auto;
     height: 100%;
     padding-bottom: 20px;
@@ -267,7 +267,7 @@ a {
 #header .menu-grid {
     display: flex;
     flex-flow: wrap;
-    max-width: 850px;
+    width: 850px;
     float: right;
 
     width: 550px;
@@ -439,14 +439,14 @@ a {
 .menu-bar,
 .menu-bar > div {
     display: grid;
-    grid-template-columns: 1.7f 2f 1.7f;
+    grid-template-columns: 1920px;
     grid-template-rows: 64px;
     justify-items: center;
 
     background: white;
     border-bottom: 1px solid #DCDCDC;
 
-    /*원래 없는 부분이나, 필요로 의해 임의로 정해진 값*/
+    /*원래 없는 부분이나, narrow header 및 필요로 의해 임의로 정해진 값*/
     margin-top: 21px;
 }
 
@@ -531,14 +531,14 @@ a {
 
 /* 특정 텍스트 스타일 지정 위해 만들음 */
 #category-text {
-    width: 100%;
-    align-content: center;
+    width: 1920px;
+    text-align: center;
+    
+    margin-top: 80.5px;
+    margin-bottom: 30px;
 }
 
 #category-text .category-text-title {
-    display: contents width: 106px;
-    height: 23px;
-
     font-family: NanumGothic;
     font-size: 20px;
 
@@ -550,15 +550,11 @@ a {
     letter-spacing: normal;
     text-align: center;
     color: #333333;
-
-    margin-top: 80.5px;
+    
     margin-bottom: 5px;
 }
 
 #category-text .category-text-sub {
-    display: contents width: 125px;
-    height: 19px;
-
     font-family: NanumGothic;
     font-size: 16px;
 
@@ -570,8 +566,6 @@ a {
     letter-spacing: normal;
     text-align: center;
     color: #333333;
-
-    margin-bottom: 30px;
 }
 
 .show-all {
@@ -621,7 +615,7 @@ a {
 
 .wrapper {
     display: grid;
-    grid-template-columns: 1.7f 2f 1.7f;
+    grid-template-columns: 1920px;
     grid-template-rows: auto;
 
     justify-items: center;
