@@ -470,21 +470,28 @@ a {
 
     position: relative;
     vertical-align: middle;
-
-    border-bottom: 1px solid #DCDCDC;
 }
 
 #menu {
+    display: flex;
+    
     background: white;
-    width: auto;
+    width: 1920px;
     height: 64px;
+    
+    justify-content: center;
 
     font-family: Raleway, sans-serif;
-
     border-bottom: 1px solid #DCDCDC;
 }
 
-#menu > li {
+#menu > .first-cell {
+    color: white;
+    float: left;
+    position: relative;
+}
+
+#menu > .cells {
     color: white;
     float: left;
     position: relative;
@@ -508,9 +515,6 @@ a {
     line-height: 1.17;
     letter-spacing: normal;
     text-align: center;
-
-    outline: inherit;
-    outline-color: black;
 }
 
 #menu > li:hover > a,
@@ -530,7 +534,7 @@ a {
 
 
 /* 특정 텍스트 스타일 지정 위해 만들음 */
-#category-text {
+#category-text { 
     width: 1920px;
     text-align: center;
     
@@ -554,7 +558,7 @@ a {
     margin-bottom: 5px;
 }
 
-#category-text .category-text-sub {
+#category-text .category-text-sub { 
     font-family: NanumGothic;
     font-size: 16px;
 
@@ -614,19 +618,19 @@ a {
 .wrapper > div:nth-child(odd) {}
 
 .wrapper {
-    display: grid;
+    display: flex;
     grid-template-columns: 1920px;
     grid-template-rows: auto;
-
-    justify-items: center;
+    
+    justify-content: center;
 }
 
 .content-container {
     display: flex;
     flex-flow: wrap;
-    max-width: 1230px;
 
     width: 1230px;
+    /*1397->auto*/
     height: auto;
 
     align-content: center;
@@ -638,7 +642,7 @@ a {
 .content-box {
     float: left;
     width: 180px;
-    height: 296px;
+    height: 299px;
 
     margin-bottom: 71px;
 }
@@ -655,25 +659,30 @@ a {
 
 .content-type {
     width: 180px;
-    height: 31px;
+    height: 16px;
 
     float: left;
     vertical-align: center;
 
+    padding-top: 10px;
     padding-bottom: 5px;
 }
 
 .content-type-icon > img {
+    display: block;
+    
     width: 22px;
     height: 9px;
 
-    /*해당 부분 padding 원래 13.2px 이나, 맞지않아 16.5로 임의 수정*/
-    padding-top: 16.5px;
+    /*해당 부분 padding 원래 3.2px 이나, 맞지않아 6.4로 임의 수정*/ 
+    padding-top: 6.4px;
     padding-left: 5px;
     float: left;
 }
 
 .content-type-text {
+    display: conten;
+    
     width: 145px;
     height: 16px;
     font-family: NanumGothic;
@@ -690,11 +699,12 @@ a {
     color: #282f88;
 
     float: left;
-    padding-top: 10px;
     padding-left: 8px;
 }
 
 .content-title {
+    display:contents;
+    
     width: 180px;
     height: 45px;
     font-family: NanumGothic;
@@ -768,7 +778,8 @@ a {
     margin: 0 auto;
     box-sizing: border-box;
 
-    margin-top: 227px;
+    /*본래 간격은 227이나, 위의 콘텐츠 패딩때문에 임의조절.*/
+    margin-top: 156px;
 }
 
 #footer > .inner {
@@ -776,7 +787,6 @@ a {
     padding: 20px 0;
     clear: both;
     text-align: center;
-    max-width: 100%;
     border-top: 1px solid #888;
 }
 
