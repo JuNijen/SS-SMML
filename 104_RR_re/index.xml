@@ -1,55 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <skin>
-	<information>
-		<name>서울미디어지원센터</name>
-		<version>1.1</version>
-		<description>
-		</description>
-		<license>
-			<![CDATA[ MIT License ]]>
-		</license>
-	</information>
-	<author>
-		<name>104 Responsive Reservation1</name>
-		<homepage>https://apost.kr</homepage>
-		<email>extflash@gmail.com</email>
-	</author>
-	<default>
-		<entriesOnPage>8</entriesOnPage>
-		<entriesOnList>8</entriesOnList>
-		<recentEntries>5</recentEntries>
-		<recentComments>4</recentComments>
-		<recentTrackbacks>4</recentTrackbacks>
-		<itemsOnGuestbook>10</itemsOnGuestbook>
-		<tagsInCloud>30</tagsInCloud>
-		<sortInCloud>3</sortInCloud>
-		<expandComment>1</expandComment>
-		<lengthOfRecentNotice>25</lengthOfRecentNotice>
-		<lengthOfRecentEntry>40</lengthOfRecentEntry>
-		<lengthOfRecentComment>30</lengthOfRecentComment>
-		<lengthOfRecentTrackback>30</lengthOfRecentTrackback>
-		<lengthOfLink>30</lengthOfLink>
-		<showListOnCategory>1</showListOnCategory>
-		<showListOnArchive>1</showListOnArchive>
-		<commentMessage>
-			<none>0</none>
-			<single>1</single>
-		</commentMessage>
-		<trackbackMessage>
-			<none>0</none>
-			<single>1</single>
-		</trackbackMessage>
-		<tree>
-			<color>000000</color>
-			<bgColor>ffffff</bgColor>
-			<activeColor>000000</activeColor>
-			<activeBgColor>eeeeee</activeBgColor>
-			<labelLength>27</labelLength>
-			<showValue>1</showValue>
-		</tree>
-		<contentWidth>830</contentWidth>
-		<cover>
-		<![CDATA[
+    <information>
+        <name>서울미디어지원센터</name>
+        <version>1.1</version>
+        <description>
+        </description>
+        <license>
+            <![CDATA[ MIT License ]]>
+        </license>
+    </information>
+    <author>
+        <name>서울미디어지원센터</name>
+        <homepage>https://example.co.kr</homepage>
+        <email>example@gmail.com</email>
+    </author>
+    <default>
+        <entriesOnPage>8</entriesOnPage>
+        <entriesOnList>8</entriesOnList>
+        <recentEntries>5</recentEntries>
+        <recentComments>4</recentComments>
+        <recentTrackbacks>4</recentTrackbacks>
+        <itemsOnGuestbook>10</itemsOnGuestbook>
+        <tagsInCloud>30</tagsInCloud>
+        <sortInCloud>3</sortInCloud>
+        <expandComment>1</expandComment>
+        <lengthOfRecentNotice>25</lengthOfRecentNotice>
+        <lengthOfRecentEntry>40</lengthOfRecentEntry>
+        <lengthOfRecentComment>30</lengthOfRecentComment>
+        <lengthOfRecentTrackback>30</lengthOfRecentTrackback>
+        <lengthOfLink>30</lengthOfLink>
+        <showListOnCategory>1</showListOnCategory>
+        <showListOnArchive>1</showListOnArchive>
+        <commentMessage>
+            <none>0</none>
+            <single>1</single>
+        </commentMessage>
+        <trackbackMessage>
+            <none>0</none>
+            <single>1</single>
+        </trackbackMessage>
+        <tree>
+            <color>000000</color>
+            <bgColor>ffffff</bgColor>
+            <activeColor>000000</activeColor>
+            <activeBgColor>eeeeee</activeBgColor>
+            <labelLength>27</labelLength>
+            <showValue>1</showValue>
+        </tree>
+        <contentWidth>830</contentWidth>
+        <cover>
+            <![CDATA[
 		[
 			{
 				"name": "cover-list",
@@ -62,793 +62,353 @@
 			}
 		]
 		]]>
-		</cover>
-	</default>
-	<cover>
-		<item>
-			<name>cover-list</name>
-			<label><![CDATA[ 리스트 ]]></label>
-			<description><![CDATA[ 글목록과 같은 디자인으로 메인에 노출하고 싶은 글을 편집해서 보여주는 리스트입니다. 기본 설정은 최근글 8개 표시입니다. ]]></description>
-		</item>
-	</cover>
-	<variables>
-		<variablegroup name="예약">
-			<variable>
-				<name>reserve-posts</name>
-				<label>
-					<![CDATA[ 예약사용 글번호(;로구분) ]]>
-				</label>
-				<type>TEXT</type>
-				<option />
-				<default></default>
-				<description>
-					<![CDATA[ 예약 기능을 사용할 글을 지정합니다. ]]>
-				</description>
-			</variable>
-			<variable>
-				<name>breserve-permitedit</name>
-				<label>
-					<![CDATA[ 예약글 수정/삭제 허용 ]]>
-				</label>
-				<type>BOOL</type>
-				<option/>
-				<default>false</default>
-				<description>
-					<![CDATA[ 예약글을 수정할 수 있도록 "수정/삭제" 링크를 표시합니다. ]]>
-				</description>
-			</variable>		
-			<variable>
-				<name>kakao-qrimage</name>
-				<label>
-					<![CDATA[ 카카오 QR송금코드 ]]>
-				</label>
-				<type>IMAGE</type>
-				<option />
-				<default></default>
-				<description>
-					<![CDATA[ 카카오 QR코드 송금 이미지 링크를 표시합니다. ]]>
-				</description>
-			</variable>				
-			<variable>
-				<name>reserve-title-label</name>
-				<label>
-					<![CDATA[ 예약폼 타이틀 ]]>
-				</label>
-				<type>TEXT</type>
-				<option />
-				<default>예약하기</default>
-				<description>
-					<![CDATA[ 예약기능 타이틀 표시 ]]>
-				</description>
-			</variable>	
-			<variable>
-				<name>reserve-notice-label</name>
-				<label>
-					<![CDATA[ 예약폼 공지사항 ]]>
-				</label>
-				<type>TEXT</type>
-				<option />
-				<default>공지사항입니다.</default>
-				<description>
-					<![CDATA[ 예약기능 공지사항 표시 ]]>
-				</description>
-			</variable>			
-			<variable>
-				<name>breservation</name>
-				<label>
-					<![CDATA[ 예약폼 표시 ]]>
-				</label>
-				<type>BOOL</type>
-				<option/>
-				<default>true</default>
-				<description>
-					<![CDATA[ 예약기능을 사용하는 글에 예약폼을 표시할지를 선택합니다. ]]>
-				</description>
-			</variable>
-			<variable>
-				<name>reserve-name-label</name>
-				<label>
-					<![CDATA[ 예약자 라벨 ]]>
-				</label>
-				<type>TEXT</type>
-				<option />
-				<default>예약자</default>
-				<description>
-					<![CDATA[ 예약자 입력 필드 라벨 표시 ]]>
-				</description>
-			</variable>			
-			<variable>
-				<name>breserve-tel</name>
-				<label>
-					<![CDATA[ 연락처 사용 ]]>
-				</label>
-				<type>BOOL</type>
-				<option/>
-				<default>true</default>
-				<description>
-					<![CDATA[ 연락처 사용 여부 지정 ]]>
-				</description>
-			</variable>
-			<variable>
-				<name>reserve-tel-label</name>
-				<label>
-					<![CDATA[ 연락처 라벨 ]]>
-				</label>
-				<type>TEXT</type>
-				<option />
-				<default>연락처</default>
-				<description>
-					<![CDATA[ 연락처 입력 필드 라벨 표시 ]]>
-				</description>
-			</variable>			
-			<variable>
-				<name>breserve-startday</name>
-				<label>
-					<![CDATA[ 시작일 사용 ]]>
-				</label>
-				<type>BOOL</type>
-				<option/>
-				<default>true</default>
-				<description>
-					<![CDATA[ 시작일 사용 여부 지정 ]]>
-				</description>
-			</variable>
-			<variable>
-				<name>reserve-startday-label</name>
-				<label>
-					<![CDATA[ 시작일 라벨 ]]>
-				</label>
-				<type>TEXT</type>
-				<option />
-				<default>시작일</default>
-				<description>
-					<![CDATA[ 시작일 날짜 선택 필드 라벨 표시 ]]>
-				</description>
-			</variable>			
-			<variable>
-				<name>breserve-endday</name>
-				<label>
-					<![CDATA[ 종료일 사용 ]]>
-				</label>
-				<type>BOOL</type>
-				<option/>
-				<default>true</default>
-				<description>
-					<![CDATA[ 종료일 사용 여부 지정 ]]>
-				</description>
-			</variable>
-			<variable>
-				<name>reserve-endday-label</name>
-				<label>
-					<![CDATA[ 종료일 라벨 ]]>
-				</label>
-				<type>TEXT</type>
-				<option />
-				<default>종료일</default>
-				<description>
-					<![CDATA[ 종료일 날짜 선택 필드 라벨 표시 ]]>
-				</description>
-			</variable>
-			<variable>
-				<name>breserve-hour</name>
-				<label>
-					<![CDATA[ 예약 시간 사용 ]]>
-				</label>
-				<type>BOOL</type>
-				<option/>
-				<default>true</default>
-				<description>
-					<![CDATA[ 예약 시간 사용 여부 지정 ]]>
-				</description>
-			</variable>
-			<variable>
-				<name>breserve-min</name>
-				<label>
-					<![CDATA[ 예약 분 사용 ]]>
-				</label>
-				<type>BOOL</type>
-				<option/>
-				<default>true</default>
-				<description>
-					<![CDATA[ 예약 분 사용 여부 지정 ]]>
-				</description>
-			</variable>
-			<variable>
-				<name>breserve-option1</name>
-				<label>
-					<![CDATA[ 옵션1 사용 ]]>
-				</label>
-				<type>BOOL</type>
-				<option/>
-				<default>true</default>
-				<description>
-					<![CDATA[ 옵션1 사용 여부 지정 ]]>
-				</description>
-			</variable>
-			<variable>
-				<name>reserve-option1-label</name>
-				<label>
-					<![CDATA[ 옵션1 라벨 ]]>
-				</label>
-				<type>TEXT</type>
-				<option />
-				<default>옵션1</default>
-				<description>
-					<![CDATA[ 옵션1 필드 라벨 표시 ]]>
-				</description>
-			</variable>
-			<variable>
-				<name>reserve-option1-val</name>
-				<label>
-					<![CDATA[ 옵션1 항목들(;로구분) ]]>
-				</label>
-				<type>TEXT</type>
-				<option />
-				<default>옵션1항목1;옵션1항목2</default>
-				<description>
-					<![CDATA[ 옵션1 항목 목록 표시 ]]>
-				</description>
-			</variable>
-			<variable>
-				<name>breserve-option2</name>
-				<label>
-					<![CDATA[ 옵션2 사용 ]]>
-				</label>
-				<type>BOOL</type>
-				<option/>
-				<default>true</default>
-				<description>
-					<![CDATA[ 옵션2 사용 여부 지정 ]]>
-				</description>
-			</variable>
-			<variable>
-				<name>reserve-option2-label</name>
-				<label>
-					<![CDATA[ 옵션2 라벨 ]]>
-				</label>
-				<type>TEXT</type>
-				<option />
-				<default>옵션2</default>
-				<description>
-					<![CDATA[ 옵션2 필드 라벨 표시 ]]>
-				</description>
-			</variable>	
-			<variable>
-				<name>reserve-option2-val</name>
-				<label>
-					<![CDATA[ 옵션2 항목들(;로구분) ]]>
-				</label>
-				<type>TEXT</type>
-				<option />
-				<default>옵션2항목1;옵션2항목2</default>
-				<description>
-					<![CDATA[ 옵션2 항목 목록 표시 ]]>
-				</description>
-			</variable>
-			<variable>
-				<name>breserve-option3</name>
-				<label>
-					<![CDATA[ 옵션3 사용 ]]>
-				</label>
-				<type>BOOL</type>
-				<option/>
-				<default>true</default>
-				<description>
-					<![CDATA[ 옵션3 사용 여부 지정 ]]>
-				</description>
-			</variable>
-			<variable>
-				<name>reserve-option3-label</name>
-				<label>
-					<![CDATA[ 옵션3 라벨 ]]>
-				</label>
-				<type>TEXT</type>
-				<option />
-				<default>옵션3</default>
-				<description>
-					<![CDATA[ 옵션3 필드 라벨 표시 ]]>
-				</description>
-			</variable>	
-			<variable>
-				<name>reserve-option3-val</name>
-				<label>
-					<![CDATA[ 옵션3 항목들(;로구분) ]]>
-				</label>
-				<type>TEXT</type>
-				<option />
-				<default>옵션3항목1;옵션3항목2</default>
-				<description>
-					<![CDATA[ 옵션3 항목 목록 표시 ]]>
-				</description>
-			</variable>
-			<variable>
-				<name>breserve-comment</name>
-				<label>
-					<![CDATA[ 예약 메모 사용 ]]>
-				</label>
-				<type>BOOL</type>
-				<option/>
-				<default>true</default>
-				<description>
-					<![CDATA[ 예약 메모 사용 여부 지정 ]]>
-				</description>
-			</variable>		
-			<variable>
-				<name>bsecret-force</name>
-				<label>
-					<![CDATA[ 비밀글로 강제 저장 ]]>
-				</label>
-				<type>BOOL</type>
-				<option/>
-				<default>true</default>
-				<description>
-					<![CDATA[ 비밀글로 강제 저장 ]]>
-				</description>
-			</variable>		
-			<variable>
-				<name>bcomment-force</name>
-				<label>
-					<![CDATA[ 메모 내용 필수 작성 ]]>
-				</label>
-				<type>BOOL</type>
-				<option/>
-				<default>false</default>
-				<description>
-					<![CDATA[ 메모 내용 필수 작성 ]]>
-				</description>
-			</variable>		
-			<variable>
-				<name>bguest-ban</name>
-				<label>
-					<![CDATA[ 비로그인은 예약 불가 ]]>
-				</label>
-				<type>BOOL</type>
-				<option/>
-				<default>false</default>
-				<description>
-					<![CDATA[ 비로그인은 예약 불가 ]]>
-				</description>
-			</variable>		
-		</variablegroup>	
-		<variablegroup name="레이아웃">
-			<variable>
-				<name>sidebar-position</name>
-				<label>
-					<![CDATA[ 사이드바 표시/위치 ]]>
-				</label>
-				<type>SELECT</type>
-				<option><![CDATA[[{"name":"sidebar-left","label":"왼쪽(2단스킨)","value":"sidebar-left"},{"name":"sidebar-right","label":"오른쪽(2단스킨)","value":"sidebar-right"}]]]></option>
-				<default>sidebar-right</default>
-				<description>
-					<![CDATA[ 사이드바가 위치할 방향을 선택합니다. ]]>
-				</description>
-			</variable>
-			<variable>
-				<name>narrow-content</name>
-				<label>
-					<![CDATA[ 좁은 컨텐츠 영역 사용(830px->730px) ]]>
-				</label>
-				<type>BOOL</type>
-				<option />
-				<default>false</default>
-				<description>
-					<![CDATA[ 기본 830px 인 컨텐츠 영역을 730px 로 줄입니다. ]]>
-				</description>
-			</variable>
-			<variable>
-				<name>category-position</name>
-				<label>
-					<![CDATA[ 카테고리 위치 ]]>
-				</label>
-				<type>SELECT</type>
-				<option><![CDATA[[{"name":"category-bottom","label":"헤더하단","value":"category-bottom"},{"name":"category-side","label":"사이드바","value":"category-side"}]]]></option>
-				<default>category-bottom</default>
-				<description>
-					<![CDATA[ 카테고리 위치를 선택합니다. ]]>
-				</description>
-			</variable>
-			<variable>
-				<name>font-type</name>
-				<label>
-					<![CDATA[ 글꼴타입 ]]>
-				</label>
-				<type>SELECT</type>
-				<option><![CDATA[[{"name":"font-sans","label":"돋움체","value":"font-sans"},{"name":"font-serif","label":"바탕체","value":"font-serif"}]]]></option>
-				<default>font-sans</default>
-				<description>
-					<![CDATA[ 글꼴 타입을 선택합니다. ]]>
-				</description>
-			</variable>
-		</variablegroup>
-		<variablegroup name="보더라인">		
-			<variable>
-				<name>Borderless-header</name>
-				<label>
-					<![CDATA[ 헤더 ]]>
-				</label>
-				<type>BOOL</type>
-				<option />
-				<default>false</default>
-				<description>
-					<![CDATA[ 헤더 전체 영역을 테두리선으로 감쌉니다. ]]>
-				</description>
-			</variable>
-			<variable>
-				<name>Borderless-menu</name>
-				<label>
-					<![CDATA[ 메뉴 ]]>
-				</label>
-				<type>BOOL</type>
-				<option />
-				<default>false</default>
-				<description>
-					<![CDATA[ 메뉴 영역을 테두리선으로 감쌉니다. ]]>
-				</description>
-			</variable>
-			<variable>
-				<name>Borderless-sidebar</name>
-				<label>
-					<![CDATA[ 사이드바 ]]>
-				</label>
-				<type>BOOL</type>
-				<option />
-				<default>true</default>
-				<description>
-					<![CDATA[ 사이드바 전체 영역을 테두리선으로 감쌉니다. ]]>
-				</description>
-			</variable>
-			<variable>
-				<name>Borderless-footer</name>
-				<label>
-					<![CDATA[ 푸터 ]]>
-				</label>
-				<type>BOOL</type>
-				<option />
-				<default>false</default>
-				<description>
-					<![CDATA[ 푸터 전체 영역을 테두리선으로 감쌉니다. ]]>
-				</description>
-			</variable>
-		</variablegroup>
-		<variablegroup name="공통/페이지">
-			<variable>
-				<name>body-bg</name>
-				<label>
-					<![CDATA[ 스킨 배경 이미지 사용 - body-bg.jpg ]]>
-				</label>
-				<type>BOOL</type>
-				<default>false</default>
-				<option />
-				<description>
-					<![CDATA[ 스킨 배경 이미지를 표시 여부를 선택합니다. images 폴더에 body-bg.jpg 이미지 파일을 업로드해야 합니다. ]]>
-				</description>
-			</variable>
-			<variable>
-				<name>background-color</name>
-				<label>
-					<![CDATA[ 스킨 배경색 선택 ]]>
-				</label>
-				<type>COLOR</type>
-				<option />
-				<default>#fff</default>
-				<description>
-					<![CDATA[ 스킨 배경색을 선택합니다. ]]>
-				</description>
-			</variable>
-			<variable>
-				<name>content-bg</name>
-				<label>
-					<![CDATA[ 컨텐츠 영역 배경색 선택 ]]>
-				</label>
-				<type>COLOR</type>
-				<option />
-				<default>TRANSPARENT</default>
-				<description>
-					<![CDATA[ 컨텐츠 영역 배경색을 선택합니다. ]]>
-				</description>
-			</variable>
-			<variable>
-				<name>highlight-color</name>
-				<label>
-					<![CDATA[ 하이라이트/테마 컬러 ]]>
-				</label>
-				<type>COLOR</type>
-				<option />
-				<default>#0298ce</default>
-				<description>
-					<![CDATA[ 기본 테마 포커스 컬러 및 마우스 오버 컬러를 선택합니다. ]]>
-				</description>
-			</variable>
-			<variable>
-				<name>short-date</name>
-				<label>
-					<![CDATA[ 짧은 날짜 사용(년월일) ]]>
-				</label>
-				<type>BOOL</type>
-				<option />
-				<default>true</default>
-				<description>
-					<![CDATA[ 기본 년월일시분초 대신 짧은 년월일 표시를 사용합니다. ]]>
-				</description>
-			</variable>
-			<variable>
-				<name>view-btn-top</name>
-				<label>
-					<![CDATA[ 탑 스크롤 버튼 사용 ]]>
-				</label>
-				<type>BOOL</type>
-				<option />
-				<default>true</default>
-				<description>
-					<![CDATA[ 오른쪽 하단의 스크롤 탑 버튼을 사용합니다. ]]>
-				</description>
-			</variable>
-		</variablegroup>
-		<variablegroup name="헤더">
-			<variable>
-				<name>center-header</name>
-				<label>
-					<![CDATA[ 헤더영역 가운데 정렬 ]]>
-				</label>
-				<type>BOOL</type>
-				<option />
-				<default>true</default>
-				<description>
-					<![CDATA[ 블로그 타이틀, 블로그 메뉴를 가운데 정렬합니다. ]]>
-				</description>
-			</variable>		
-			<variable>
-				<name>header-bg</name>
-				<label>
-					<![CDATA[ 헤더 배경 이미지 사용 - header-bg.jpg ]]>
-				</label>
-				<type>BOOL</type>
-				<default>true</default>
-				<option />
-				<description>
-					<![CDATA[ 헤더 배경 이미지를 표시 여부를 선택합니다. images 폴더에 header-bg.jpg 이미지 파일을 업로드해야 합니다. ]]>
-				</description>
-			</variable>
-			<variable>
-				<name>header-bg-color</name>
-				<label>
-					<![CDATA[ 헤더 영역 배경색 선택 ]]>
-				</label>
-				<type>COLOR</type>
-				<option />
-				<default>TRANSPARENT</default>
-				<description>
-					<![CDATA[ 헤더 영역 배경색을 선택합니다. ]]>
-				</description>
-			</variable>			
-			<variable>
-				<name>title-color</name>
-				<label>
-					<![CDATA[ 블로그 타이틀 색상 선택 ]]>
-				</label>
-				<type>COLOR</type>
-				<option />
-				<default>#000</default>
-				<description>
-					<![CDATA[ 상단 블로그 제목 색상을 선택합니다. ]]>
-				</description>
-			</variable>
-			<variable>
-				<name>blogmenu-color</name>
-				<label>
-					<![CDATA[ 블로그 메뉴 색상 선택 ]]>
-				</label>
-				<type>COLOR</type>
-				<option />
-				<default>#000</default>
-				<description>
-					<![CDATA[ 블로그 메뉴 색상을 선택합니다. ]]>
-				</description>
-			</variable>
-			<variable>
-				<name>logo-image</name>
-				<label>
-					<![CDATA[ 타이틀 대체 이미지 ]]>
-				</label>
-				<type>IMAGE</type>
-				<option />
-				<default></default>
-				<description>
-					<![CDATA[ 블로그 타이틀을 대체해 이미지를 표시합니다. ]]>
-				</description>
-			</variable>
-			<variable>
-				<name>view-snsicon</name>
-				<label>
-					<![CDATA[ SNS 아이콘 보기 ]]>
-				</label>
-				<type>BOOL</type>
-				<option />
-				<default>true</default>
-				<description>
-					<![CDATA[ SNS 아이콘 표시 여부를 선택합니다. ]]>
-				</description>
-			</variable>
-			<variable>
-				<name>newwindow-snslink</name>
-				<label>
-					<![CDATA[ 새창(탭)에 SNS 링크 열기 ]]>
-				</label>
-				<type>BOOL</type>
-				<option />
-				<default>true</default>
-				<description>
-					<![CDATA[ 새창(탭)에 SNS 링크 페이지를 엽니다. ]]>
-				</description>
-			</variable>
-			<variable>
-				<name>sns-pinterest</name>
-				<label><![CDATA[ Pinterest URL ]]></label>
-				<type>STRING</type>
-				<option />
-				<default>Pinterest</default>
-				<description><![CDATA[ Pinterest URL를 입력해주세요. ]]></description>
-			</variable>
-			<variable>
-				<name>sns-facebook</name>
-				<label><![CDATA[ Facebook URL ]]></label>
-				<type>STRING</type>
-				<option />
-				<default>Facebook</default>
-				<description><![CDATA[ Facebook URL를 입력해주세요. ]]></description>
-			</variable>
-			<variable>
-				<name>sns-twitter</name>
-				<label><![CDATA[ Twitter URL ]]></label>
-				<type>STRING</type>
-				<option />
-				<default>Twitter</default>
-				<description><![CDATA[ Twitter URL를 입력해주세요. ]]></description>
-			</variable>
-			<variable>
-				<name>sns-instagram</name>
-				<label><![CDATA[ Instagram URL ]]></label>
-				<type>STRING</type>
-				<option />
-				<default>Instagram</default>
-				<description><![CDATA[ Instagram URL를 입력해주세요. ]]></description>
-			</variable>
-			<variable>
-				<name>sns-youtube</name>
-				<label><![CDATA[ Youtube URL ]]></label>
-				<type>STRING</type>
-				<option />
-				<default>Youtube</default>
-				<description><![CDATA[ Youtube URL를 입력해주세요. ]]></description>
-			</variable>
-			<variable>
-				<name>sns-email</name>
-				<label><![CDATA[ Email Address ]]></label>
-				<type>STRING</type>
-				<option />
-				<default>email@mydomain.com</default>
-				<description><![CDATA[ Email Address 를 입력해주세요. ]]></description>
-			</variable>
-		</variablegroup>
-		<variablegroup name="사이드바">
-			<variable>
-				<name>recent-posttype</name>
-				<label>
-					<![CDATA[ 사이드바 최근글, 인기글 썸네일 표시 ]]>
-				</label>
-				<type>BOOL</type>
-				<option/>
-				<default>true</default>
-				<description>
-					<![CDATA[ 사이드바 최근글, 인기글에 썸네일 표시 여부를 선택합니다.  ]]>
-				</description>
-			</variable>
-			<variable>
-				<name>view-profile</name>
-				<label>
-					<![CDATA[ 프로필 표시 ]]>
-				</label>
-				<type>BOOL</type>
-				<option />
-				<default>true</default>
-				<description>
-					<![CDATA[ 프로필 정보 표시 여부를 선택합니다. ]]>
-				</description>
-			</variable>
-			<variable>
-				<name>profile-img-size</name>
-				<label>
-					<![CDATA[ 프로필 이미지 크기 ]]>
-				</label>
-				<type>SELECT</type>
-				<option><![CDATA[[{"name":"small","label":"작게(원형)","value":""},{"name":"middle","label":"중간크기(둥근사각)","value":"-middle"},{"name":"big","label":"크게(사각)","value":"-big"}]]]></option>
-				<default></default>
-				<description>
-					<![CDATA[ 프로필 이미지 크기를 선택합니다. ]]>
-				</description>
-			</variable>		
-		</variablegroup>
-		<variablegroup name="글목록">
-			<variable>
-				<name>paging-type</name>
-				<label>
-					<![CDATA[ 페이징 타입 ]]>
-				</label>
-				<type>SELECT</type>
-				<default>pagelist</default>
-				<option><![CDATA[[{"name":"paging-view-more","label":"더보기","value":"paging-view-more"},{"name":"prevnext","label":"이전/다음","value":"prevnext"},{"name":"pagelist","label":"페이지목록","value":"pagelist"}]]]></option>
-				<description>
-					<![CDATA[ 글목록 페이지 이동, 글보기 글 이동시 페이지 이동을 위한 하단 페이징 표시 방법을 선택합니다. ]]>
-				</description>
-			</variable>
-			<variable>
-				<name>view-thumbnail-excerpt</name>
-				<label><![CDATA[ 글 내용 미리보기 출력 ]]></label>
-				<type>BOOL</type>
-				<option />
-				<default>true</default>
-				<description>
-					<![CDATA[ 글 내용 미리보기를 출력합니다. 끄면 썸네일과 제목만 표시 ]]>
-				</description>
-			</variable>
-			<variable>
-				<name>short-excerpt</name>
-				<label><![CDATA[ 짧은 글 내용 미리보기(4줄 -> 2줄) ]]></label>
-				<type>BOOL</type>
-				<option />
-				<default>false</default>
-				<description>
-					<![CDATA[ 글 내용 미리보기를 4줄 -> 2줄로 출력합니다. ]]>
-				</description>
-			</variable>
-			<variable>
-				<name>view-thumbnail-date</name>
-				<label><![CDATA[ 글 목록 날짜 출력 ]]></label>
-				<type>BOOL</type>
-				<option />
-				<default>true</default>
-				<description>
-					<![CDATA[ 글 목록에 날짜를 표시합니다.  ]]>
-				</description>
-			</variable>
-		</variablegroup>
-		<variablegroup name="푸터">
-			<variable>
-				<name>footer-image</name>
-				<label>
-					<![CDATA[ 푸터 이미지 표시 ]]>
-				</label>
-				<type>IMAGE</type>
-				<option />
-				<default></default>
-				<description>
-					<![CDATA[ 푸터에 이미지를 표시합니다. ]]>
-				</description>
-			</variable>
-			<variable>
-				<name>footer-text</name>
-				<label>
-					<![CDATA[ 푸터 텍스트 표시 ]]>
-				</label>
-				<type>STRING</type>
-				<option />
-				<default></default>
-				<description>
-					<![CDATA[ 푸터 텍스트를 표시합니다. ]]>
-				</description>
-			</variable>
-			<variable>
-				<name>show-blog-menu</name>
-				<label>
-					<![CDATA[ 블로그 메뉴 표시 ]]>
-				</label>
-				<type>BOOL</type>
-				<option />
-				<default>true</default>
-				<description>
-					<![CDATA[ 푸터 블로그 메뉴를 표시합니다. ]]>
-				</description>
-			</variable>
-		</variablegroup>
-	</variables>
+        </cover>
+    </default>
+    <cover>
+        <item>
+            <name>cover-list</name>
+            <label>
+                <![CDATA[ 리스트 ]]></label>
+            <description>
+                <![CDATA[ 글목록과 같은 디자인으로 메인에 노출하고 싶은 글을 편집해서 보여주는 리스트입니다. 기본 설정은 최근글 8개 표시입니다. ]]>
+            </description>
+        </item>
+    </cover>
+    <variables>
+        <variablegroup name="레이아웃">
+            <variable>
+                <name>narrow-content</name>
+                <label>
+                    <![CDATA[ 좁은 컨텐츠 영역 사용(830px->730px) ]]>
+                </label>
+                <type>BOOL</type>
+                <option />
+                <default>false</default>
+                <description>
+                    <![CDATA[ 기본 830px 인 컨텐츠 영역을 730px 로 줄입니다. ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>font-type</name>
+                <label>
+                    <![CDATA[ 글꼴타입 ]]>
+                </label>
+                <type>SELECT</type>
+                <option>
+                    <![CDATA[[{"name":"font-sans","label":"돋움체","value":"font-sans"},{"name":"font-serif","label":"바탕체","value":"font-serif"}]]]>
+                </option>
+                <default>font-sans</default>
+                <description>
+                    <![CDATA[ 글꼴 타입을 선택합니다. ]]>
+                </description>
+            </variable>
+        </variablegroup>
+        <variablegroup name="보더라인">
+            <variable>
+                <name>Borderless-header</name>
+                <label>
+                    <![CDATA[ 헤더 ]]>
+                </label>
+                <type>BOOL</type>
+                <option />
+                <default>false</default>
+                <description>
+                    <![CDATA[ 헤더 전체 영역을 테두리선으로 감쌉니다. ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>Borderless-menu</name>
+                <label>
+                    <![CDATA[ 메뉴 ]]>
+                </label>
+                <type>BOOL</type>
+                <option />
+                <default>false</default>
+                <description>
+                    <![CDATA[ 메뉴 영역을 테두리선으로 감쌉니다. ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>Borderless-sidebar</name>
+                <label>
+                    <![CDATA[ 사이드바 ]]>
+                </label>
+                <type>BOOL</type>
+                <option />
+                <default>true</default>
+                <description>
+                    <![CDATA[ 사이드바 전체 영역을 테두리선으로 감쌉니다. ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>Borderless-footer</name>
+                <label>
+                    <![CDATA[ 푸터 ]]>
+                </label>
+                <type>BOOL</type>
+                <option />
+                <default>false</default>
+                <description>
+                    <![CDATA[ 푸터 전체 영역을 테두리선으로 감쌉니다. ]]>
+                </description>
+            </variable>
+        </variablegroup>
+        <variablegroup name="공통/페이지">
+            <variable>
+                <name>body-bg</name>
+                <label>
+                    <![CDATA[ 스킨 배경 이미지 사용 - body-bg.jpg ]]>
+                </label>
+                <type>BOOL</type>
+                <default>false</default>
+                <option />
+                <description>
+                    <![CDATA[ 스킨 배경 이미지를 표시 여부를 선택합니다. images 폴더에 body-bg.jpg 이미지 파일을 업로드해야 합니다. ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>background-color</name>
+                <label>
+                    <![CDATA[ 스킨 배경색 선택 ]]>
+                </label>
+                <type>COLOR</type>
+                <option />
+                <default>#fff</default>
+                <description>
+                    <![CDATA[ 스킨 배경색을 선택합니다. ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>content-bg</name>
+                <label>
+                    <![CDATA[ 컨텐츠 영역 배경색 선택 ]]>
+                </label>
+                <type>COLOR</type>
+                <option />
+                <default>TRANSPARENT</default>
+                <description>
+                    <![CDATA[ 컨텐츠 영역 배경색을 선택합니다. ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>highlight-color</name>
+                <label>
+                    <![CDATA[ 하이라이트/테마 컬러 ]]>
+                </label>
+                <type>COLOR</type>
+                <option />
+                <default>#0298ce</default>
+                <description>
+                    <![CDATA[ 기본 테마 포커스 컬러 및 마우스 오버 컬러를 선택합니다. ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>short-date</name>
+                <label>
+                    <![CDATA[ 짧은 날짜 사용(년월일) ]]>
+                </label>
+                <type>BOOL</type>
+                <option />
+                <default>true</default>
+                <description>
+                    <![CDATA[ 기본 년월일시분초 대신 짧은 년월일 표시를 사용합니다. ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>view-btn-top</name>
+                <label>
+                    <![CDATA[ 탑 스크롤 버튼 사용 ]]>
+                </label>
+                <type>BOOL</type>
+                <option />
+                <default>true</default>
+                <description>
+                    <![CDATA[ 오른쪽 하단의 스크롤 탑 버튼을 사용합니다. ]]>
+                </description>
+            </variable>
+        </variablegroup>
+        <variablegroup name="헤더">
+            <variable>
+                <name>center-header</name>
+                <label>
+                    <![CDATA[ 헤더영역 가운데 정렬 ]]>
+                </label>
+                <type>BOOL</type>
+                <option />
+                <default>true</default>
+                <description>
+                    <![CDATA[ 블로그 타이틀, 블로그 메뉴를 가운데 정렬합니다. ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>header-bg</name>
+                <label>
+                    <![CDATA[ 헤더 배경 이미지 사용 - header-bg.jpg ]]>
+                </label>
+                <type>BOOL</type>
+                <default>true</default>
+                <option />
+                <description>
+                    <![CDATA[ 헤더 배경 이미지를 표시 여부를 선택합니다. images 폴더에 header-bg.jpg 이미지 파일을 업로드해야 합니다. ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>header-bg-color</name>
+                <label>
+                    <![CDATA[ 헤더 영역 배경색 선택 ]]>
+                </label>
+                <type>COLOR</type>
+                <option />
+                <default>TRANSPARENT</default>
+                <description>
+                    <![CDATA[ 헤더 영역 배경색을 선택합니다. ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>title-color</name>
+                <label>
+                    <![CDATA[ 블로그 타이틀 색상 선택 ]]>
+                </label>
+                <type>COLOR</type>
+                <option />
+                <default>#000</default>
+                <description>
+                    <![CDATA[ 상단 블로그 제목 색상을 선택합니다. ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>blogmenu-color</name>
+                <label>
+                    <![CDATA[ 블로그 메뉴 색상 선택 ]]>
+                </label>
+                <type>COLOR</type>
+                <option />
+                <default>#000</default>
+                <description>
+                    <![CDATA[ 블로그 메뉴 색상을 선택합니다. ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>logo-image</name>
+                <label>
+                    <![CDATA[ 타이틀 대체 이미지 ]]>
+                </label>
+                <type>IMAGE</type>
+                <option />
+                <default></default>
+                <description>
+                    <![CDATA[ 블로그 타이틀을 대체해 이미지를 표시합니다. ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>sns-youtube</name>
+                <label>
+                    <![CDATA[ Youtube URL ]]></label>
+                <type>STRING</type>
+                <option />
+                <default>Youtube</default>
+                <description>
+                    <![CDATA[ Youtube URL를 입력해주세요. ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>sns-email</name>
+                <label>
+                    <![CDATA[ Email Address ]]></label>
+                <type>STRING</type>
+                <option />
+                <default>email@mydomain.com</default>
+                <description>
+                    <![CDATA[ Email Address 를 입력해주세요. ]]>
+                </description>
+            </variable>
+        </variablegroup>
+        <variablegroup name="글목록">
+            <variable>
+                <name>paging-type</name>
+                <label>
+                    <![CDATA[ 페이징 타입 ]]>
+                </label>
+                <type>SELECT</type>
+                <default>pagelist</default>
+                <option>
+                    <![CDATA[[{"name":"paging-view-more","label":"더보기","value":"paging-view-more"},{"name":"prevnext","label":"이전/다음","value":"prevnext"},{"name":"pagelist","label":"페이지목록","value":"pagelist"}]]]>
+                </option>
+                <description>
+                    <![CDATA[ 글목록 페이지 이동, 글보기 글 이동시 페이지 이동을 위한 하단 페이징 표시 방법을 선택합니다. ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>view-thumbnail-excerpt</name>
+                <label>
+                    <![CDATA[ 글 내용 미리보기 출력 ]]></label>
+                <type>BOOL</type>
+                <option />
+                <default>true</default>
+                <description>
+                    <![CDATA[ 글 내용 미리보기를 출력합니다. 끄면 썸네일과 제목만 표시 ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>short-excerpt</name>
+                <label>
+                    <![CDATA[ 짧은 글 내용 미리보기(4줄 -> 2줄) ]]></label>
+                <type>BOOL</type>
+                <option />
+                <default>false</default>
+                <description>
+                    <![CDATA[ 글 내용 미리보기를 4줄 -> 2줄로 출력합니다. ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>view-thumbnail-date</name>
+                <label>
+                    <![CDATA[ 글 목록 날짜 출력 ]]></label>
+                <type>BOOL</type>
+                <option />
+                <default>true</default>
+                <description>
+                    <![CDATA[ 글 목록에 날짜를 표시합니다.  ]]>
+                </description>
+            </variable>
+        </variablegroup>
+        <variablegroup name="푸터">
+            <variable>
+                <name>footer-image</name>
+                <label>
+                    <![CDATA[ 푸터 이미지 표시 ]]>
+                </label>
+                <type>IMAGE</type>
+                <option />
+                <default></default>
+                <description>
+                    <![CDATA[ 푸터에 이미지를 표시합니다. ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>footer-text</name>
+                <label>
+                    <![CDATA[ 푸터 텍스트 표시 ]]>
+                </label>
+                <type>STRING</type>
+                <option />
+                <default></default>
+                <description>
+                    <![CDATA[ 푸터 텍스트를 표시합니다. ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>show-blog-menu</name>
+                <label>
+                    <![CDATA[ 블로그 메뉴 표시 ]]>
+                </label>
+                <type>BOOL</type>
+                <option />
+                <default>true</default>
+                <description>
+                    <![CDATA[ 푸터 블로그 메뉴를 표시합니다. ]]>
+                </description>
+            </variable>
+        </variablegroup>
+    </variables>
 </skin>

@@ -485,12 +485,6 @@ a {
     border-bottom: 1px solid #DCDCDC;
 }
 
-#menu > .first-cell {
-    color: white;
-    float: left;
-    position: relative;
-}
-
 #menu > .cells {
     color: white;
     float: left;
@@ -533,6 +527,7 @@ a {
 }
 
 
+
 /* 특정 텍스트 스타일 지정 위해 만들음 */
 #category-text { 
     width: 1920px;
@@ -572,6 +567,8 @@ a {
     color: #333333;
 }
 
+
+
 .show-all {
     display: flex;
     position: absolute;
@@ -582,8 +579,8 @@ a {
     height: 18px;
 
     /*해당부분 제플린 상으로는 594px x 1481px 이나, 위에 임의값으로 함께 밀린 것으로 추정.*/
-    top: 618px;
-    left: 1488px;
+    top: 635px;
+    left: 1495px;
 }
 
 .show-all > img {
@@ -595,7 +592,7 @@ a {
 
 .show-all > a {
 	    /*해당부분 원래 53px이었으나, 특정 상황에서 잘려보인다는 이야기가 들려 넉넉하게 수정.*/
-    width: 60px;
+    width: 53px;
     height: 16px;
     
     font-family: NanumGothic;
@@ -611,6 +608,7 @@ a {
 }
 
 
+
 .wrapper > div {
     align-content: center;
 }
@@ -619,11 +617,12 @@ a {
 
 .wrapper {
     display: flex;
-    grid-template-columns: 1920px;
+    width: 1920px;
     grid-template-rows: auto;
     
     justify-content: center;
 }
+
 
 .content-container {
     display: flex;
@@ -722,6 +721,7 @@ a {
 }
 
 
+
 /* 이동성을 위해 #header 하위로 넣지 않음. */
 
 #header > .inner > .title {
@@ -771,6 +771,8 @@ a {
     box-sizing: border-box;
 }
 
+
+
 /* 푸터 */
 #footer {
     position: relative;
@@ -781,6 +783,8 @@ a {
     /*본래 간격은 227이나, 위의 콘텐츠 패딩때문에 임의조절.*/
     margin-top: 156px;
 }
+
+
 
 #footer > .inner {
     margin: 0 auto;
