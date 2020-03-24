@@ -66,9 +66,7 @@ div,
 dl,
 dt,
 dd,
-ul,
 ol,
-li,
 h1,
 h2,
 h3,
@@ -88,6 +86,13 @@ th,
 td,
 figure {
     margin: 0;
+}
+
+li,
+ul {
+    margin: 0;
+    list-style: none;
+    padding-left: 0;
 }
 
 header,
@@ -474,11 +479,11 @@ a {
 
 #menu {
     display: flex;
-    
+
     background: white;
     width: 1920px;
     height: 64px;
-    
+
     justify-content: center;
 
     font-family: Raleway, sans-serif;
@@ -529,10 +534,10 @@ a {
 
 
 /* 특정 텍스트 스타일 지정 위해 만들음 */
-#category-text { 
+#category-text {
     width: 1920px;
     text-align: center;
-    
+
     margin-top: 80.5px;
     margin-bottom: 30px;
 }
@@ -549,11 +554,11 @@ a {
     letter-spacing: normal;
     text-align: center;
     color: #333333;
-    
+
     margin-bottom: 5px;
 }
 
-#category-text .category-text-sub { 
+#category-text .category-text-sub {
     font-family: NanumGothic;
     font-size: 16px;
 
@@ -586,22 +591,22 @@ a {
 .show-all > img {
     width: 18px;
     height: 18px;
-    
+
     margin-right: 8px;
 }
 
 .show-all > a {
-	    /*해당부분 원래 53px이었으나, 특정 상황에서 잘려보인다는 이야기가 들려 넉넉하게 수정.*/
+    /*해당부분 원래 53px이었으나, 특정 상황에서 잘려보인다는 이야기가 들려 넉넉하게 수정.*/
     width: 53px;
     height: 16px;
-    
+
     font-family: NanumGothic;
     font-size: 14px;
-    
+
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    
+
     line-height: 1.14;
     letter-spacing: normal;
     color: #414141;
@@ -619,13 +624,12 @@ a {
     display: flex;
     width: 1920px;
     grid-template-rows: auto;
-    
+
     justify-content: center;
 }
 
-
 .content-container {
-    display: flex;
+    display: flex;    
     flex-flow: wrap;
 
     width: 1230px;
@@ -635,10 +639,10 @@ a {
     align-content: center;
     vertical-align: top;
 
-    justify-content: space-between;
+    justify-content:space-between;
 }
 
-.content-box {
+.content-box {    
     float: left;
     width: 180px;
     height: 299px;
@@ -646,7 +650,7 @@ a {
     margin-bottom: 71px;
 }
 
-.content-image {
+.content-box-img {
     width: 180px;
     height: 220px;
 
@@ -669,11 +673,11 @@ a {
 
 .content-type-icon > img {
     display: block;
-    
+
     width: 22px;
     height: 9px;
 
-    /*해당 부분 padding 원래 3.2px 이나, 맞지않아 6.4로 임의 수정*/ 
+    /*해당 부분 padding 원래 3.2px 이나, 맞지않아 6.4로 임의 수정*/
     padding-top: 6.4px;
     padding-left: 5px;
     float: left;
@@ -681,7 +685,7 @@ a {
 
 .content-type-text {
     display: conten;
-    
+
     width: 145px;
     height: 16px;
     font-family: NanumGothic;
@@ -701,9 +705,10 @@ a {
     padding-left: 8px;
 }
 
+
 .content-title {
-    display:contents;
-    
+    display: contents;
+
     width: 180px;
     height: 45px;
     font-family: NanumGothic;
