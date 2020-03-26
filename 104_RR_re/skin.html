@@ -282,14 +282,19 @@ narrow-header
 
                                                 <div class="entry-content">
                                                     [##_article_rep_desc_##]
-                                                    <form class="protected_form" onsubmit="[##_article_dissolve_##]">
-                                                        <p>보호되어 있는 글입니다.<br>
-                                                            내용을 보시려면 비밀번호를 입력하세요.</p>
-                                                        <fieldset>
-                                                            <input type="password" id="[##_article_password_##]" name="[##_article_password_##]" value="" placeholder="비밀번호" />
-                                                            <button type="submit" class="btn">입력</button>
-                                                        </fieldset>
-                                                    </form>
+
+                                                    <div id="content-wrapper">
+                                                        <div class="content-container">
+                                                            <form class="protected_form" onsubmit="[##_article_dissolve_##]">
+                                                                <p>보호되어 있는 글입니다.<br>
+                                                                    내용을 보시려면 비밀번호를 입력하세요.</p>
+                                                                <fieldset>
+                                                                    <input type="password" id="[##_article_password_##]" name="[##_article_password_##]" value="" placeholder="비밀번호" />
+                                                                    <button type="submit" class="btn">입력</button>
+                                                                </fieldset>
+                                                            </form>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </s_permalink_article_rep>
                                         </s_article_protected>
@@ -435,7 +440,7 @@ narrow-header
                                                                         </s_rp_guest>
                                                                         <div class="secret">
                                                                             <input type="checkbox" name="[##_rp_input_is_secret_##]" id="secret">
-                                                                            <label for="secret" tabindex="0">Secret</label>
+                                                                            <label for="secret" tabindex="0">비밀댓글</label>
                                                                         </div>
                                                                     </div>
                                                                 </s_rp_member>
@@ -609,8 +614,8 @@ narrow-header
             // 2020-03-24
             $(function() {
                 $('.content-box').each(function() {
-                    if (!$(this).find('div').hasClass("content-box-image")) {
-                        $(this).append("<div class=\"content-box-image\" style=\"background-image:url(./images/noimagefound.png);\"></div>");
+                    if (!$(this).find('div').hasClass("content-box-img")) {
+                        $(this).prepend("<div class=\"content-box-img\" style=\"background-image:url(./images/noimagefound.png);\"></div>");
                     }
                 });
             });

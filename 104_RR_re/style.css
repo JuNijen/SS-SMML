@@ -1614,6 +1614,8 @@ a {
 .entry-content {
     color: #383838;
     overflow: hidden;
+    
+    margin-bottom: 75px;
 }
 
 .entry-content h1 {
@@ -1924,7 +1926,7 @@ a {
 }
 
 .comments .comment-form .field {
-    position: relative;
+    position: relative;00
     overflow: hidden;
     width: 100%;
     margin-bottom: 8px;
@@ -1967,6 +1969,7 @@ a {
 
 .comments .comment-form .field .secret {
     display: inline-block;
+    
     margin-left: 15px;
     vertical-align: middle;
 }
