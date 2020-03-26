@@ -1823,7 +1823,7 @@ a {
 
 /* 댓글 */
 .comments {
-    margin: 0 auto 30px;
+    margin: 0 auto 50px;
 }
 
 .comments h2 {
@@ -1832,7 +1832,7 @@ a {
 }
 
 .comments .comment-list {
-    margin: 30px 0;
+    margin: 40px 0;
 }
 
 .comments .comment-list ul li {
@@ -1945,7 +1945,7 @@ a {
 .comments .comment-form input[type=password],
 .comments .comment-form select {
     width: 140px;
-    height: 52px;
+    height: 35px;
     margin-right: 6px;
     padding: 10px;
     box-sizing: border-box;
@@ -1960,7 +1960,7 @@ a {
     display: block;
     width: 100%;
     margin-bottom: 10px;
-    padding: 10px;
+    padding: 5px;
     resize: none;
     box-sizing: border-box;
 }
@@ -2002,7 +2002,7 @@ a {
 .comments .comment-form .submit,
 .protected_form .btn {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 5px 20px;
     border: 1px solid #e6e6e6;
     font-size: 0.9375em;
 }

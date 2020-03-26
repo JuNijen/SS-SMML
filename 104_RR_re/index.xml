@@ -2,27 +2,25 @@
 <skin>
     <information>
         <name>서울미디어지원센터</name>
+        <email>mediact@maeulmedia.org</email>
         <version>1.1</version>
         <description>
         </description>
         <license>
-            <![CDATA[ MIT License ]]>
+            <![CDATA[ 서울미디어지원센터 ]]>
         </license>
     </information>
     <author>
-        <name>서울미디어지원센터</name>
-        <homepage>https://example.co.kr</homepage>
-        <email>example@gmail.com</email>
+        <name>Ssocion corp</name>
+        <homepage>http://ssocion.com/</homepage>
+        <email>se.jeon@ssocion.com</email>
     </author>
     <default>
-        <entriesOnPage>8</entriesOnPage>
-        <entriesOnList>8</entriesOnList>
-        <recentEntries>5</recentEntries>
-        <recentComments>4</recentComments>
-        <recentTrackbacks>4</recentTrackbacks>
-        <itemsOnGuestbook>10</itemsOnGuestbook>
-        <tagsInCloud>30</tagsInCloud>
-        <sortInCloud>3</sortInCloud>
+        <entriesOnPage>24</entriesOnPage>
+        <entriesOnList>24</entriesOnList>
+        <recentEntries>30</recentEntries>
+        <recentComments>5</recentComments>
+        <recentTrackbacks>5</recentTrackbacks>
         <expandComment>1</expandComment>
         <lengthOfRecentNotice>25</lengthOfRecentNotice>
         <lengthOfRecentEntry>40</lengthOfRecentEntry>
@@ -56,6 +54,8 @@
 		]]>
         </cover>
     </default>
+
+
     <cover>
         <item>
             <name>cover-list</name>
@@ -66,86 +66,16 @@
             </description>
         </item>
     </cover>
+
+
     <variables>
-        <variablegroup name="레이아웃">
-            <variable>
-                <name>narrow-content</name>
-                <label>
-                    <![CDATA[ 좁은 컨텐츠 영역 사용(830px->730px) ]]>
-                </label>
-                <type>BOOL</type>
-                <option />
-                <default>false</default>
-                <description>
-                    <![CDATA[ 기본 830px 인 컨텐츠 영역을 730px 로 줄입니다. ]]>
-                </description>
-            </variable>
-            <variable>
-                <name>font-type</name>
-                <label>
-                    <![CDATA[ 글꼴타입 ]]>
-                </label>
-                <type>SELECT</type>
-                <option>
-                    <![CDATA[[{"name":"font-sans","label":"돋움체","value":"font-sans"},{"name":"font-serif","label":"바탕체","value":"font-serif"}]]]>
-                </option>
-                <default>font-sans</default>
-                <description>
-                    <![CDATA[ 글꼴 타입을 선택합니다. ]]>
-                </description>
-            </variable>
+        <variablegroup name="레이아웃 옵션">
+
         </variablegroup>
-        <variablegroup name="보더라인">
-            <variable>
-                <name>Borderless-header</name>
-                <label>
-                    <![CDATA[ 헤더 ]]>
-                </label>
-                <type>BOOL</type>
-                <option />
-                <default>false</default>
-                <description>
-                    <![CDATA[ 헤더 전체 영역을 테두리선으로 감쌉니다. ]]>
-                </description>
-            </variable>
-            <variable>
-                <name>Borderless-menu</name>
-                <label>
-                    <![CDATA[ 메뉴 ]]>
-                </label>
-                <type>BOOL</type>
-                <option />
-                <default>false</default>
-                <description>
-                    <![CDATA[ 메뉴 영역을 테두리선으로 감쌉니다. ]]>
-                </description>
-            </variable>
-            <variable>
-                <name>Borderless-sidebar</name>
-                <label>
-                    <![CDATA[ 사이드바 ]]>
-                </label>
-                <type>BOOL</type>
-                <option />
-                <default>true</default>
-                <description>
-                    <![CDATA[ 사이드바 전체 영역을 테두리선으로 감쌉니다. ]]>
-                </description>
-            </variable>
-            <variable>
-                <name>Borderless-footer</name>
-                <label>
-                    <![CDATA[ 푸터 ]]>
-                </label>
-                <type>BOOL</type>
-                <option />
-                <default>false</default>
-                <description>
-                    <![CDATA[ 푸터 전체 영역을 테두리선으로 감쌉니다. ]]>
-                </description>
-            </variable>
-        </variablegroup>
-        <variablegroup name="공통/페이지">
+
+
+
+        <variablegroup name="공통적인 페이지 옵션">
             <variable>
                 <name>body-bg</name>
                 <label>
@@ -213,12 +143,27 @@
                 </label>
                 <type>BOOL</type>
                 <option />
-                <default>true</default>
+                <default>false</default>
                 <description>
                     <![CDATA[ 오른쪽 하단의 스크롤 탑 버튼을 사용합니다. ]]>
                 </description>
             </variable>
+            <variable>
+                <name>narrow-content</name>
+                <label>
+                    <![CDATA[ 좁은 컨텐츠 영역 사용(830px->730px) ]]>
+                </label>
+                <type>BOOL</type>
+                <option />
+                <default>false</default>
+                <description>
+                    <![CDATA[ 기본 830px 인 컨텐츠 영역을 730px 로 줄입니다. ]]>
+                </description>
+            </variable>
         </variablegroup>
+
+
+        
         <variablegroup name="헤더">
             <variable>
                 <name>center-header</name>
@@ -292,78 +237,10 @@
                     <![CDATA[ 블로그 타이틀을 대체해 이미지를 표시합니다. ]]>
                 </description>
             </variable>
-            <variable>
-                <name>sns-youtube</name>
-                <label>
-                    <![CDATA[ Youtube URL ]]></label>
-                <type>STRING</type>
-                <option />
-                <default>Youtube</default>
-                <description>
-                    <![CDATA[ Youtube URL를 입력해주세요. ]]>
-                </description>
-            </variable>
-            <variable>
-                <name>sns-email</name>
-                <label>
-                    <![CDATA[ Email Address ]]></label>
-                <type>STRING</type>
-                <option />
-                <default>email@mydomain.com</default>
-                <description>
-                    <![CDATA[ Email Address 를 입력해주세요. ]]>
-                </description>
-            </variable>
         </variablegroup>
-        <variablegroup name="글목록">
-            <variable>
-                <name>paging-type</name>
-                <label>
-                    <![CDATA[ 페이징 타입 ]]>
-                </label>
-                <type>SELECT</type>
-                <default>pagelist</default>
-                <option>
-                    <![CDATA[[{"name":"paging-view-more","label":"더보기","value":"paging-view-more"},{"name":"prevnext","label":"이전/다음","value":"prevnext"},{"name":"pagelist","label":"페이지목록","value":"pagelist"}]]]>
-                </option>
-                <description>
-                    <![CDATA[ 글목록 페이지 이동, 글보기 글 이동시 페이지 이동을 위한 하단 페이징 표시 방법을 선택합니다. ]]>
-                </description>
-            </variable>
-            <variable>
-                <name>view-thumbnail-excerpt</name>
-                <label>
-                    <![CDATA[ 글 내용 미리보기 출력 ]]></label>
-                <type>BOOL</type>
-                <option />
-                <default>true</default>
-                <description>
-                    <![CDATA[ 글 내용 미리보기를 출력합니다. 끄면 썸네일과 제목만 표시 ]]>
-                </description>
-            </variable>
-            <variable>
-                <name>short-excerpt</name>
-                <label>
-                    <![CDATA[ 짧은 글 내용 미리보기(4줄 -> 2줄) ]]></label>
-                <type>BOOL</type>
-                <option />
-                <default>false</default>
-                <description>
-                    <![CDATA[ 글 내용 미리보기를 4줄 -> 2줄로 출력합니다. ]]>
-                </description>
-            </variable>
-            <variable>
-                <name>view-thumbnail-date</name>
-                <label>
-                    <![CDATA[ 글 목록 날짜 출력 ]]></label>
-                <type>BOOL</type>
-                <option />
-                <default>true</default>
-                <description>
-                    <![CDATA[ 글 목록에 날짜를 표시합니다.  ]]>
-                </description>
-            </variable>
-        </variablegroup>
+
+
+        
         <variablegroup name="푸터">
             <variable>
                 <name>footer-image</name>
