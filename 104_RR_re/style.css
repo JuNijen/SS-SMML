@@ -270,36 +270,17 @@ a {
 
 
 #header .menu-grid {
-    display: flex;
-    flex-flow: wrap;
-    width: 850px;
-    float: right;
-
-    width: 550px;
+    width: auto;
     height: 46px;
-
+    float: right;
+    
     align-content: right;
     vertical-align: center;
 
     margin-top: 34px;
     margin-right: 360px;
-    align-items: center;
-    justify-content: space-between;
 }
 
-#header .login-circle {
-    display: grid;
-
-    float: right;
-    width: 120px;
-    height: 46px;
-
-    border-radius: 24px;
-    border: solid 1px #ffffff;
-
-    justify-content: center;
-    align-items: center;
-}
 
 #header > a,
 #header .text {
@@ -318,25 +299,11 @@ a {
 
     line-height: 1.17;
     letter-spacing: normal;
+    
+    padding-right: 60px;
 }
 
-#header .search-grid {
-    display: flex;
 
-    width: auto;
-    height: auto;
-    float: left;
-
-    flex-flow: wrap;
-    align-content: center;
-    align-items: center;
-}
-
-#header .search-image {
-    width: 18px;
-    height: 18px;
-    padding-right: 5px;
-}
 
 /*FIND::*/
 /*title-images*/
@@ -2227,7 +2194,7 @@ a {
 }
 
 /* Media Screen - Mobile */
-@media screen and (max-width:767px) {
+@media screen and (max-width:360px) {
     #wrap {
         max-width: 750px;
     }
