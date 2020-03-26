@@ -439,8 +439,8 @@ a {
 }
 
 
-/* 메뉴 추가를 위해 만들음 */
 
+/* 메뉴 추가를 위해 만들음 */
 .menu-bar,
 .menu-bar > div {
     display: grid;
@@ -574,53 +574,13 @@ a {
 
 
 
-.show-all {
-    display: flex;
-    position: absolute;
-    align-items: center;
-
-    /*해당부분 원래 79px이었으나, 특정 상황에서 잘려보인다는 이야기가 들려 넉넉하게 수정.*/
-    width: 85px;
-    height: 18px;
-
-    /*해당부분 제플린 상으로는 594px x 1481px 이나, 위에 임의값으로 함께 밀린 것으로 추정.*/
-    top: 635px;
-    left: 1495px;
-}
-
-.show-all > img {
-    width: 18px;
-    height: 18px;
-
-    margin-right: 8px;
-}
-
-.show-all > a {
-    /*해당부분 원래 53px이었으나, 특정 상황에서 잘려보인다는 이야기가 들려 넉넉하게 수정.*/
-    width: 53px;
-    height: 16px;
-
-    font-family: NanumGothic;
-    font-size: 14px;
-
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-
-    line-height: 1.14;
-    letter-spacing: normal;
-    color: #414141;
-}
-
-
-
-.wrapper > div {
+#wrapper > div {
     align-content: center;
 }
 
-.wrapper > div:nth-child(odd) {}
+#wrapper > div:nth-child(odd) {}
 
-.wrapper {
+#wrapper {
     display: flex;
     width: 1920px;
     grid-template-rows: auto;
@@ -628,7 +588,7 @@ a {
     justify-content: center;
 }
 
-.content-container {
+#wrapper .content-container {
     display: flex;    
     flex-flow: wrap;
 
@@ -642,7 +602,7 @@ a {
     justify-content:space-between;
 }
 
-.content-box {    
+#wrapper .content-box {    
     float: left;
     width: 180px;
     height: 299px;
@@ -650,7 +610,7 @@ a {
     margin-bottom: 71px;
 }
 
-.content-box-img {
+#wrapper .content-box-img {
     width: 180px;
     height: 220px;
 
@@ -660,7 +620,7 @@ a {
     border: solid 1px #e8e8e8;
 }
 
-.content-type {
+#wrapper .content-type {
     width: 180px;
     height: 16px;
 
@@ -671,7 +631,7 @@ a {
     padding-bottom: 5px;
 }
 
-.content-type-icon > img {
+#wrapper .content-type-icon > img {
     display: block;
 
     width: 22px;
@@ -683,7 +643,7 @@ a {
     float: left;
 }
 
-.content-type-text {
+#wrapper .content-type-text {
     display: conten;
 
     width: 145px;
@@ -706,7 +666,7 @@ a {
 }
 
 
-.content-title {
+#wrapper .content-title {
     display: contents;
 
     width: 180px;
@@ -741,20 +701,41 @@ a {
 
 
 
-/* 내용 */
+/* 본문이 표기되는 부분.*/
+
+#content-wrapper > div {
+    align-content: center;
+}
+
+#content-wrapper > div:nth-child(odd) {}
+
+#content-wrapper {
+    display: flex;
+    width: 1920px;
+    grid-template-rows: auto;
+
+    justify-content: center;
+    
+    margin-top: 50px;
+}
+
+#content-wrapper .content-container {
+    display: flex;    
+    flex-flow: wrap;
+
+    width: 1230px;
+    /*1397->auto*/
+    height: auto;
+
+    align-content: center;
+    vertical-align: top;
+
+    justify-content:space-between;
+}
+
 #content {
     position: relative;
-    max-width: 830px;
-    margin: 0 0 0 330px;
-    box-sizing: border-box;
-}
-
-.narrow-content #content {
-    max-width: 730px;
-}
-
-.sidebar-right #content {
-    margin: 0 330px 0 0;
+    max-width: 700px;
 }
 
 #content > .inner {

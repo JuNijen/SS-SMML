@@ -31,14 +31,6 @@
         <lengthOfLink>30</lengthOfLink>
         <showListOnCategory>1</showListOnCategory>
         <showListOnArchive>1</showListOnArchive>
-        <commentMessage>
-            <none>0</none>
-            <single>1</single>
-        </commentMessage>
-        <trackbackMessage>
-            <none>0</none>
-            <single>1</single>
-        </trackbackMessage>
         <tree>
             <color>000000</color>
             <bgColor>ffffff</bgColor>
