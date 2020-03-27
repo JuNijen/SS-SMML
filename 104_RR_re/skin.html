@@ -167,6 +167,8 @@ narrow-header
         <!--내용물의 중앙정렬을 위한 큰 wrapper-->
         <div id="wrapper">
             <div class="content-container">
+
+                <!--최근 게시글-->
                 <s_rctps_rep>
                     <li>
                         <div class="content-box">
@@ -545,9 +547,20 @@ narrow-header
         </div>
 
 
+        
+        <div id="wrapper">
+            <div class="content-container">
+                <div id="search">
+                    <s_search>
+                        <input type="text" name="[##_search_name_##]" value="[##_search_text_##]" placeholder="검색어를 입력하세요." onkeypress="if (event.keyCode == 13) { [##_search_onclick_submit_##] }">
+                        <button type="submit" onclick="[##_search_onclick_submit_##]">검색</button>
+                    </s_search>
+                </div>
+            </div>
+        </div>
 
 
-
+        
 
         <footer id="footer">
             <div class="inner">

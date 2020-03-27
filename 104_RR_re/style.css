@@ -273,7 +273,7 @@ a {
     width: auto;
     height: 46px;
     float: right;
-    
+
     align-content: right;
     vertical-align: center;
 
@@ -299,8 +299,8 @@ a {
 
     line-height: 1.17;
     letter-spacing: normal;
-    
-    padding-right: 60px;
+
+    padding-left: 60px;
 }
 
 
@@ -556,7 +556,7 @@ a {
 }
 
 #wrapper .content-container {
-    display: flex;    
+    display: flex;
     flex-flow: wrap;
 
     width: 1230px;
@@ -566,10 +566,10 @@ a {
     align-content: center;
     vertical-align: top;
 
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
-#wrapper .content-box {    
+#wrapper .content-box {
     float: left;
     width: 180px;
     height: 299px;
@@ -682,12 +682,12 @@ a {
     grid-template-rows: auto;
 
     justify-content: center;
-    
+
     margin-top: 50px;
 }
 
 #content-wrapper .content-container {
-    display: flex;    
+    display: flex;
     flex-flow: wrap;
 
     width: 1230px;
@@ -697,7 +697,7 @@ a {
     align-content: center;
     vertical-align: top;
 
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
 #content {
@@ -724,6 +724,34 @@ a {
     box-sizing: border-box;
 }
 
+
+
+#search {
+    width: 1920px;
+    text-align-last:center;
+}
+
+#search input {
+    width: 300px;
+    height: 30px;
+
+    font-family: NanumGothic;
+    font-size: 14px;
+    
+    background: none;
+    border: solid 1px #808080;
+}
+
+#search button {
+    width: 50px;
+    height: 35px;
+
+    font-family: NanumGothic;
+    font-size: 14px;
+
+    background: none;
+    border: solid 1px #808080;
+}
 
 
 /* 푸터 */
@@ -1581,7 +1609,7 @@ a {
 .entry-content {
     color: #383838;
     overflow: hidden;
-    
+
     margin-bottom: 75px;
 }
 
@@ -1893,8 +1921,8 @@ a {
 }
 
 .comments .comment-form .field {
-    position: relative;00
-    overflow: hidden;
+    position: relative;
+    00 overflow: hidden;
     width: 100%;
     margin-bottom: 8px;
 }
@@ -1936,7 +1964,7 @@ a {
 
 .comments .comment-form .field .secret {
     display: inline-block;
-    
+
     margin-left: 15px;
     vertical-align: middle;
 }
@@ -2259,13 +2287,8 @@ a {
         padding-bottom: 20px;
     }
 
-    .social-link-wrap {
-        float: none;
-    }
 
-    .social-link {
-        text-align: center;
-    }
+
 
     #header.on .social-link {
         margin-top: 40px;
@@ -2281,18 +2304,7 @@ a {
         float: none;
     }
 
-    .box_aside {
-        width: 100%;
-    }
 
-    .sidebar-left .sidebar,
-    .sidebar-right .sidebar,
-    .sidebar {
-        display: none;
-        border: 0;
-        background-color: #fff;
-        margin-top: 0;
-    }
 
     #content {
         width: 100%;

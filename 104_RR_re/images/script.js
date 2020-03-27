@@ -65,6 +65,7 @@
 		}
 	}
 
+    
 	// 모바일에서 테이블 감싸서 스와이프로 볼 수 있게 함.
 	function mobileTable(){
 		var $table = $(".entry-content table");
@@ -77,6 +78,7 @@
 			});
 		}
 	}
+    
 
 	//모바일에서 아이프레임 감싸서 스와이프로 볼 수 있게 함.
 	function iframeWrap(){
@@ -90,6 +92,8 @@
 			});
 		}
 	}
+    
+
 	//이미지 없는 썸네일 자리 채우기용 투명 이미지 태그 붙이기
 	function setNoImage(){
 		$(".post-item, .recent-posts > li, .cover-list ul li").each(function(){
@@ -115,6 +119,7 @@
 			$is_mobile = false;
 		}
 	}
+    
 
 	//모바일 사이드바로 카테고리 이동
 	function setMobileCategory(){
@@ -135,6 +140,7 @@
 			}
 		}
 	}
+    
 	
 	//모바일 메뉴 펼쳐졌으면 클릭 트리거
 	function clickMobileMenu(){
@@ -143,6 +149,7 @@
 		}
 	}
 
+    
 	//검색폼 펼쳐졌으면 감춤 처리
 	function checkSearchBar(){
 		if($is_mobile && $('.search.on').length){
@@ -152,6 +159,7 @@
 		}		
 	}
 
+    
 	//모바일 사이드바 이동
 	function modeSidebar(){
 		if($is_mobile){
@@ -167,6 +175,10 @@
 		}		
 	}
 
+    
+    
+    
+    
 	//초기화 함수
 	function gnb(){
 		//모바일 메뉴 아이콘 클릭 처리
@@ -254,6 +266,9 @@
 
 	gnb();
 
+    
+    
+    
 	//탑으로 애니메이션 스크롤 하는 버튼
 	if($('.btn-top').length){
 		$('.btn-top').click(function(){
