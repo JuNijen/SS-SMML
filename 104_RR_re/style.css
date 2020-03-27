@@ -256,6 +256,10 @@ a {
     margin-bottom: 40px;
 }
 
+
+/* #header
+    우측 상단의 메뉴(마을미디어홈, 매거진)들이 포함되어있다.
+*/
 #header > .inner {
     width: 1920px;
     margin: 0 auto;
@@ -305,8 +309,10 @@ a {
 
 
 
-/*FIND::*/
-/*title-images*/
+/* #title-img
+    헤더 부분에 들어가는 모든 img를 관리
+    로고 및 텍스트 이미지가 포함되어있다.
+*/
 #title-img {}
 
 #title-img .title-logo {
@@ -329,6 +335,10 @@ a {
 }
 
 
+/* .line1~3
+    메인화면 좌측 상단의 라인 세개.
+    별도의 이미지파일이 없어 수동 구현.
+*/
 #title-img .line1 {
     position: absolute;
     top: 127.5px;
@@ -360,6 +370,11 @@ a {
 }
 
 
+
+/* .cir-grid, .cir1~3
+    메인화면 우측 상단의 동그라미 세개.
+    별도의 이미지파일이 없어 수동 구현.
+*/
 #title-img .cir-grid {
     display: flex;
     flex-wrap: wrap;
@@ -407,7 +422,12 @@ a {
 
 
 
-/* 메뉴 추가를 위해 만들음 */
+/* #menu, .menu-bar
+    메인페이지 중앙에 들어가는 메뉴 바에 이용됨. (곧 사라질 예정)
+    테이블셀로 각각의 박스들을 관리하며, 중앙정렬이 되도록 grid 로 감싸주었다.
+    클릭하면 활성화되며 색이 바뀌는 동작을 하는 스크립트가 붙어있다.
+*/
+
 .menu-bar,
 .menu-bar > div {
     display: grid;
@@ -500,7 +520,12 @@ a {
 
 
 
-/* 특정 텍스트 스타일 지정 위해 만들음 */
+/* #category- text
+    메인 화면의 Magazine 한 눈에 확인하세요 부분의 스타일 지정을 위하여 작성
+    가운데 정렬 후 폰트 지정 외의 특별한 기능은 포함되어있지 않다.
+    normal과 같이 기본값으로 지정한 친구들은 제플린의 지시에 따라 추가하였다.
+    종종 삭제할 경우 폰트의 디테일이 사라지는 것이 확인. 변경 시 주의할것.
+*/
 #category-text {
     width: 1920px;
     text-align: center;
@@ -540,7 +565,10 @@ a {
 }
 
 
-
+/* #wrapper
+    메인 페이지의 콘텐츠를 감싸는 그룹. (가운데 정렬)
+    메인 페이지가 아닐 경우 사라지는 스크립트 처리가 되어있다.
+*/
 #wrapper > div {
     align-content: center;
 }
@@ -655,7 +683,6 @@ a {
 
 
 /* 이동성을 위해 #header 하위로 넣지 않음. */
-
 #header > .inner > .title {
     margin: 0 auto;
     height: 60px;
@@ -669,7 +696,6 @@ a {
 
 
 /* 본문이 표기되는 부분.*/
-
 #content-wrapper > div {
     align-content: center;
 }

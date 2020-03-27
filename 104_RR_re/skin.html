@@ -168,7 +168,7 @@ narrow-header
         <div id="wrapper">
             <div class="content-container">
 
-                <!--최근 게시글-->
+                <!--메인 화면의 최근 게시글-->
                 <s_rctps_rep>
                     <li>
                         <div class="content-box">
@@ -195,6 +195,8 @@ narrow-header
             </div>
         </div>
 
+        
+        <!--각종 글들이 표기될 곳-->
         <div class="inner">
             <div class="content-bg">
 
@@ -239,7 +241,7 @@ narrow-header
                                             </div>
                                         </s_list>
 
-
+                                        <!--보호된(암호가 걸린) 글일 경우-->
                                         <s_article_protected>
                                             <s_index_article_rep>
                                                 <div class="post-item">
@@ -287,6 +289,7 @@ narrow-header
                                             </s_permalink_article_rep>
                                         </s_article_protected>
 
+
                                         <s_article_rep>
                                             <s_index_article_rep>
                                                 <div class="post-item">
@@ -319,6 +322,8 @@ narrow-header
                                                     </a>
                                                 </div>
                                             </s_index_article_rep>
+
+
                                             <s_permalink_article_rep>
                                                 <div class="hgroup">
                                                     <div class="category">[##_article_rep_category_##]</div>
@@ -347,6 +352,7 @@ narrow-header
                                                     </div>
                                                 </s_tag_label>
 
+                                                <!--본문 하단 관련글 표기-->
                                                 <s_article_related>
                                                     <div class="related-articles">
                                                         <h2>'[##_article_rep_category_##]' 관련글</h2>
@@ -373,6 +379,7 @@ narrow-header
                                                 </s_article_related>
 
                                                 <s_rp>
+                                                    <!--댓글 리스트-->
                                                     <div class="comments">
                                                         <s_rp_container>
                                                             <div class="comment-list">
@@ -479,7 +486,9 @@ narrow-header
                                                     </div>
                                                 </s_guest_input_form>
 
+
                                                 <s_guest_container>
+                                                    <!--댓글 리스트-->
                                                     <div class="comment-list">
                                                         <ul>
                                                             <s_guest_rep>
@@ -525,6 +534,8 @@ narrow-header
 
                                     </div>
 
+
+                                    <!--페이징-->
                                     <s_paging>
                                         <div class="pagination">
                                             <div class="inner">
@@ -540,14 +551,16 @@ narrow-header
                             </div>
                         </article>
 
-                    </div><!-- "section .inner" -->
+                    </div>
                 </section>
-
             </div>
         </div>
 
 
-        
+
+        <!--이곳에 더보기 기능 추가 예정-->
+
+        <!--search-->
         <div id="wrapper">
             <div class="content-container">
                 <div id="search">
@@ -559,9 +572,11 @@ narrow-header
             </div>
         </div>
 
+        <!--이곳에 카테고리 기능 추가 예정-->
 
-        
 
+
+        <!--footer-->
         <footer id="footer">
             <div class="inner">
                 <s_if_var_footer-image>
@@ -582,6 +597,7 @@ narrow-header
 
 
 
+        <!--외부 파일 추가-->
         <script src="./images/script.js"></script>
         <script src="./images/reservation.js"></script>
         <link rel="stylesheet" href="./images/reservation.css" />
