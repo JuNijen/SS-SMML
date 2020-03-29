@@ -408,18 +408,12 @@ a {
 
 
 /* 메뉴 추가를 위해 만들음 */
-.menu-bar,
-.menu-bar > div {
+.category-group,
+.category-group > div {
     display: grid;
     grid-template-columns: 1920px;
-    grid-template-rows: 64px;
+    grid-template-rows: 300px;
     justify-items: center;
-
-    background: white;
-    border-bottom: 1px solid #DCDCDC;
-
-    /*원래 없는 부분이나, narrow header 및 필요로 의해 임의로 정해진 값*/
-    margin-top: 21px;
 }
 
 #menu > div {
@@ -428,12 +422,42 @@ a {
 
 #menu > div:nth-child(odd) {}
 
-#menu,
-#menu li,
-#menu li a {
-    display: table-cell;
 
-    width: 200px;
+#menu {
+    display: flex;
+
+    flex-flow: wrap;
+
+    width: 900px;
+    height: 300px;
+
+    justify-content: left;
+    font-family: Raleway, sans-serif;
+    
+    padding-bottom: 30px;
+}
+
+#menu > .cells {
+    display: table-cell;
+    color: white;
+
+    width: 100px;
+    height: 64px;
+
+    float: left;
+    position: relative;
+
+    border: 1px solid #DCDCDC;
+		margin:3px;
+}
+
+#menu > li,
+#menu > li > a {
+    display: table-cell;
+    color: #333333;
+    background: white;
+
+    width: 100px;
     height: 64px;
 
     margin: 0;
@@ -442,36 +466,9 @@ a {
 
     position: relative;
     vertical-align: middle;
-}
-
-#menu {
-    display: flex;
-
-    background: white;
-    width: 1920px;
-    height: 64px;
-
-    justify-content: center;
-
-    font-family: Raleway, sans-serif;
-    border-bottom: 1px solid #DCDCDC;
-}
-
-#menu > .cells {
-    color: white;
-    float: left;
-    position: relative;
-
-    border-left: 1px solid #DCDCDC;
-}
-
-#menu > li > a {
-    display: table-cell;
-    color: #333333;
-    background: white;
 
     font-family: NanumGothic;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: bold;
 
     font-stretch: normal;
@@ -728,7 +725,9 @@ a {
 
 #search {
     width: 1920px;
-    text-align-last:center;
+    text-align-last: center;
+    
+    margin-top: 30px;
 }
 
 #search input {
@@ -737,7 +736,7 @@ a {
 
     font-family: NanumGothic;
     font-size: 14px;
-    
+
     background: none;
     border: solid 1px #808080;
 }
@@ -757,7 +756,7 @@ a {
 /* 푸터 */
 #footer {
     position: relative;
-    width: 100%;
+    width: 1920px;
     margin: 0 auto;
     box-sizing: border-box;
 
@@ -768,6 +767,7 @@ a {
 
 
 #footer > .inner {
+    width: 1920px;
     margin: 0 auto;
     padding: 20px 0;
     clear: both;
