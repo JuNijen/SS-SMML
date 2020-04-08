@@ -651,6 +651,111 @@ a {
 
 
 
+/*
+//카테고리 부분을 위한 기능
+//보기 좋게 수정 해 보려다가 캔슬 된 부분. wrapper_category html도 함께 주석처리.
+#wrapper_category > div {
+    align-content: center;
+}
+
+#wrapper_category > div:nth-child(odd) {}
+
+#wrapper_category {
+    display: flex;
+    width: 100%;
+    grid-template-rows: auto;
+
+    justify-content: center;
+}
+
+#wrapper_category .content-container {
+    display: flex;
+    flex-flow: wrap;
+
+    width: 100%;
+    /*1397->auto*/
+    height: auto;
+
+    align-content: center;
+    vertical-align: top;
+
+    justify-content: space-between;
+}
+
+#wrapper_category .content-box {
+    float: left;
+    width: 180px;
+    height: 299px;
+
+    margin-bottom: 71px;
+}
+
+#wrapper_category .content-box-img {
+    width: 180px;
+    height: 220px;
+
+    align-items: center;
+    position: relative;
+
+    border: solid 1px #e8e8e8;
+}
+
+#wrapper_category .content-type {
+    width: 180px;
+    height: 16px;
+
+    float: left;
+    vertical-align: center;
+
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+#wrapper_category .content-type-text {
+    display: conten;
+
+    width: 145px;
+    height: 16px;
+    font-family: NanumGothic;
+    font-size: 14px;
+
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+
+    line-height: 1.71;
+    letter-spacing: normal;
+
+    text-align: left;
+    color: #282f88;
+
+    float: left;
+}
+
+
+#wrapper_category .content-title {
+    display: contents;
+
+    width: 180px;
+    height: 45px;
+    font-family: NanumGothic;
+    font-size: 15px;
+
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+
+    line-height: 1.5;
+    letter-spacing: normal;
+
+    text-align: left;
+    color: #212121;
+}
+*/
+
+
+
+
 /* 이동성을 위해 #header 하위로 넣지 않음. */
 
 #header > .inner > .title {
