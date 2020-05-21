@@ -1,9 +1,6 @@
 @charset "utf-8";
 
 /*
- * apost.kr
- * 104 Responsive Reservation1
- *
  * CSS CONTENTS:
  *
  * 01. Web Font
@@ -215,7 +212,7 @@ a {
 /* Layout Selector */
 #wrap {
     width: 1920px;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -233,7 +230,6 @@ a {
 }
 
 #header {
-    position: relative;
     width: 1920px;
     height: 420px;
     box-sizing: border-box;
@@ -262,7 +258,7 @@ a {
 */
 #header > .inner {
     width: 1920px;
-    margin: 0 auto;
+    margin: 0;
     height: 100%;
     padding-bottom: 20px;
     border-bottom: 1px solid #888;
@@ -431,6 +427,8 @@ a {
 .menu-bar,
 .menu-bar > div {
     display: grid;
+    max-width:1920px;
+    
     grid-template-columns: 1920px;
     grid-template-rows: 64px;
     justify-items: center;
@@ -570,6 +568,7 @@ a {
     메인 페이지가 아닐 경우 사라지는 스크립트 처리가 되어있다.
 */
 #wrapper > div {
+    max-width: 1920px;
     align-content: center;
 }
 
@@ -1410,9 +1409,11 @@ a {
 .hgroup h1 {
     display: block;
     margin-bottom: 10px;
+    
     font-size: 1.375em;
     font-weight: 500;
     line-height: 1.25em;
+    
     color: #000;
     border-bottom: 1px solid #ccc;
     padding: 0 0 10px;
@@ -1846,7 +1847,7 @@ a {
 
 /* 댓글 */
 .comments {
-    margin: 0 auto 50px;
+    margin: 0;
 }
 
 .comments h2 {
