@@ -431,6 +431,7 @@ a {
 }
 
 #menu > div {
+    max-width:1920px;    
     align-content: center;
 }
 
@@ -579,7 +580,7 @@ a {
     display: flex;
     flex-flow: wrap;
 
-    width: 1230px;
+    width: 1020px;
     /*1397->auto*/
     height: auto;
 
@@ -1175,7 +1176,7 @@ a {
 
 /*글 목록 페이징*/
 .pagination {
-    width: 100%;
+    width: 500px;
     text-align: center;
     box-sizing: border-box;
     padding: 40px 0;
