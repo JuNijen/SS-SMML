@@ -547,7 +547,7 @@ narrow-header
 
 
         <!--이곳에 더보기 기능 추가 예정-->
-<!--
+        <!--
         <s_paging>
             <div class="pagination">
                 <div class="inner">
@@ -615,6 +615,12 @@ narrow-header
         </div>
 
 
+
+        <s_if_var_view-btn-top>
+            <a href="#top" class="btn-top hideanim"><i class="fas fa-arrow-up"></i></a>
+        </s_if_var_view-btn-top>
+
+
         <!--footer-->
         <footer id="footer">
             <div class="inner">
@@ -628,11 +634,6 @@ narrow-header
 
             </div>
         </footer>
-
-
-        <s_if_var_view-btn-top>
-            <a href="#top" class="btn-top hideanim"><i class="fas fa-arrow-up"></i></a>
-        </s_if_var_view-btn-top>
 
 
 
@@ -685,6 +686,13 @@ narrow-header
             }
             if (window.location.pathname == '/') {
                 document.write('<style>#content{display:none !important;}</style>');
+            }
+        </script>
+
+        <script>
+            var UserAgent = navigator.userAgent;
+            if (UserAgent.match(/iPhone|iPod|Android|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|nokia|SonyEricsson/i) != null || UserAgent.match(/LG|SAMSUNG|Samsung/) != null) {
+                
             }
         </script>
     </s_t3>
