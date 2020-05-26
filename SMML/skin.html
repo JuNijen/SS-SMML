@@ -23,16 +23,9 @@
             font-family: 'Noto Sans KR', sans-serif;
         }
 
-        <s_if_var_highlight-color>
-
-        /* 104 Responsive Reservation1 */
-        .social-link a:hover,
-        #header .category a:hover,
+        <s_if_var_highlight-color>#header .category a:hover,
         #header .category>ul>li>a:hover,
         #header .category>ul>li>ul>li>a:hover,
-        .sidebar ul li a:hover,
-        .box_aside .tt-calendar tbody td a,
-        .box_aside .tt-calendar tbody td .cal_click,
         #footer .blog-menu ul li:hover a,
         .cover-thumbnail-list ul li a:hover .title,
         .cover-masonry ul li a:hover .title,
@@ -61,9 +54,6 @@
             background: [##_var_highlight-color_##] !important;
         }
 
-        .sidebar .search button,
-        .box_aside .list_tag .link_tag:hover,
-        .box_aside .link_more,
         .cover-thumbnail-list ul li .text-box:hover,
         .cover-banner ul li .more-btn:hover {
             background-color: [##_var_highlight-color_##] !important;
@@ -91,7 +81,6 @@ place-thumbnail
 narrow-header 
 <s_if_var_center-header> center-header</s_if_var_center-header>
 <s_if_var_category-position> [##_var_category-position_##]</s_if_var_category-position>
-<s_if_var_sidebar-position> [##_var_sidebar-position_##]</s_if_var_sidebar-position>
 <s_if_var_paging-type> [##_var_paging-type_##]</s_if_var_paging-type>
 <s_if_var_font-type> [##_var_font-type_##]</s_if_var_font-type>
 <s_if_var_body-bg> body-bg</s_if_var_body-bg>
@@ -101,7 +90,7 @@ narrow-header
 <s_if_var_Borderless-menu> Borderless-menu</s_if_var_Borderless-menu>
 <s_if_var_Borderless-sidebar> Borderless-sidebar</s_if_var_Borderless-sidebar>
 <s_if_var_short-excerpt> short-excerpt</s_if_var_short-excerpt>
-<s_if_var_Borderless-footer> Borderless-footer</s_if_var_Borderless-footer>" <s_if_var_background-color> style="background-color:[##_var_background-color_##]"</s_if_var_background-color>>
+<s_if_var_Borderless-footer> Borderless-footer</s_if_var_Borderless-footer>" <s_if_var_background-color> style=background-color:[##_var_background-color_##]</s_if_var_background-color>>
 
     <s_t3>
         <div id="wrap">
@@ -571,35 +560,37 @@ narrow-header
 
 
         <!--하단 카테고리 분류-->
-        <div class="category-group">
-            <div id="menu">
-                <li class="cells"><a href='https://maeul-library.tistory.com/'>전체 </a></li>
-                <li class="cells"><a href='https://maeul-library.tistory.com/category/센터발간'>센터발간</a></li>
-                <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/강남구'>강남구</a></li>
-                <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/강동구'>강동구</a></li>
-                <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/강북구'>강북구</a></li>
-                <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/강서구'>강서구</a></li>
-                <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/관악구'>관악구</a></li>
-                <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/광진구'>광진구</a></li>
-                <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/구로구'>구로구</a></li>
-                <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/금천구'>금천구</a></li>
-                <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/노원구'>노원구</a></li>
-                <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/도봉구'>도봉구</a></li>
-                <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/동대문구'>동대문구</a></li>
-                <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/동작구'>동작구</a></li>
-                <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/마포구'>마포구</a></li>
-                <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/서대문구'>서대문구</a></li>
-                <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/서초구'>서초구</a></li>
-                <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/성동구'>성동구</a></li>
-                <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/성북구'>성북구</a></li>
-                <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/송파구'>송파구</a></li>
-                <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/양천구'>양천구</a></li>
-                <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/영등포구'>영등포구</a></li>
-                <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/용산구'>용산구</a></li>
-                <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/은평구'>은평구</a></li>
-                <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/종로구'>종로구</a></li>
-                <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/중구'>중구</a></li>
-                <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/중랑구'>중랑구</a></li>
+        <div id="content-wrapper">
+            <div class="category-group">
+                <div id="menu">
+                    <li class="cells"><a href='https://maeul-library.tistory.com/'>전체 </a></li>
+                    <li class="cells"><a href='https://maeul-library.tistory.com/category/센터발간물'>센터발간</a></li>
+                    <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/강남구'>강남구</a></li>
+                    <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/강동구'>강동구</a></li>
+                    <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/강북구'>강북구</a></li>
+                    <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/강서구'>강서구</a></li>
+                    <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/관악구'>관악구</a></li>
+                    <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/광진구'>광진구</a></li>
+                    <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/구로구'>구로구</a></li>
+                    <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/금천구'>금천구</a></li>
+                    <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/노원구'>노원구</a></li>
+                    <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/도봉구'>도봉구</a></li>
+                    <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/동대문구'>동대문구</a></li>
+                    <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/동작구'>동작구</a></li>
+                    <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/마포구'>마포구</a></li>
+                    <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/서대문구'>서대문구</a></li>
+                    <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/서초구'>서초구</a></li>
+                    <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/성동구'>성동구</a></li>
+                    <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/성북구'>성북구</a></li>
+                    <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/송파구'>송파구</a></li>
+                    <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/양천구'>양천구</a></li>
+                    <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/영등포구'>영등포구</a></li>
+                    <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/용산구'>용산구</a></li>
+                    <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/은평구'>은평구</a></li>
+                    <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/종로구'>종로구</a></li>
+                    <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/중구'>중구</a></li>
+                    <li class="cells"><a href='https://maeul-library.tistory.com/category/지역별/중랑구'>중랑구</a></li>
+                </div>
             </div>
         </div>
 
@@ -693,7 +684,7 @@ narrow-header
         <script>
             var UserAgent = navigator.userAgent;
             if (UserAgent.match(/iPhone|iPod|Android|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|nokia|SonyEricsson/i) != null || UserAgent.match(/LG|SAMSUNG|Samsung/) != null) {
-                
+
             }
         </script>
     </s_t3>

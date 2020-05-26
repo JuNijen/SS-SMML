@@ -2374,6 +2374,8 @@ a {
 @media screen and (max-width:480px) {
     #wrap {
         max-width: 480px;
+        width: auto;
+        margin: auto;
     }
 
     #header .category-menu {
@@ -2416,6 +2418,8 @@ a {
         height: 65px;
         position: fixed;
         z-index: 399;
+        
+        max-width: 480px;
         width: 100%;
         left: 0;
         top: 0;
@@ -2436,17 +2440,6 @@ a {
         padding-bottom: 20px;
     }
 
-
-
-
-    #header.on .social-link {
-        margin-top: 40px;
-    }
-
-    #header.on .content-wrap {
-        margin: 0 auto;
-    }
-
     #header .blog-menu {
         position: relative;
         margin: 0 auto;
@@ -2456,7 +2449,9 @@ a {
 
 
     #content {
-        width: 100%;
+        max-width: 480px;
+        width: auto;
+        margin: auto;
     }
 
     .cover-list ul li .article-info {
@@ -2616,6 +2611,9 @@ a {
 
     .pagelist .pagination {
         max-width: 480px;
+        width: auto;
+        margin: auto;
+
         padding: 40px 0;
     }
 
@@ -2632,8 +2630,8 @@ a {
 
 
     #hedaer {
-        width: auto;
         max-width: 480px;
+        width: auto;
     }
 
     #header > a,
@@ -2643,6 +2641,7 @@ a {
 
     #header > .inner {
         max-width: 480px;
+        width : auto;
     }
 
 
@@ -2651,17 +2650,18 @@ a {
     .category-group,
     .category-group > div {
         display: grid;
-        max-width: 480px;
-        width: auto;
+        
+        max-width: 400px;
+        width: 95%;
         margin: auto;
 
-        grid-template-columns: 480px;
-        grid-template-rows: 400px;
-        justify-items: left;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        justify-content: center;
     }
 
     #menu > div {
-        max-width: 480px;
+        max-width: 400px;
         width: auto;
         margin: auto;
     }
@@ -2670,23 +2670,21 @@ a {
         display: flex;
         flex-flow: wrap;
 
-        max-width: 480px;
+        max-width: 400px;
         width: auto;
-        height: 350px;
         margin: auto;
+        height: 350px;
 
         justify-content: center;
         font-family: Raleway, sans-serif;
-
-        padding-bottom: 30px;
     }
 
     #menu > .cells {
         display: table-cell;
         color: white;
 
-        width: 75px;
-        height: 50px;
+        width: 70px;
+        height: 45px;
 
         float: left;
         position: relative;
@@ -2701,8 +2699,8 @@ a {
         color: #333333;
         background: white;
 
-        width: 75px;
-        height: 50px;
+        width: 70px;
+        height: 45px;
 
         margin: 0;
         padding: 0;
@@ -2712,7 +2710,7 @@ a {
         vertical-align: middle;
 
         font-family: NanumGothic;
-        font-size: 15px;
+        font-size: 13px;
         font-weight: bold;
 
         font-stretch: normal;
@@ -2760,6 +2758,9 @@ a {
 */
     #wrapper > div {
         max-width: 480px;
+        width: auto;
+        margin: auto;
+
         align-content: center;
     }
 
@@ -2780,7 +2781,7 @@ a {
         display: flex;
         flex-flow: wrap;
 
-        max-width: 400px;
+        max-width: 380px;
         width: auto;
         margin: auto;
         height: auto;
@@ -2882,7 +2883,10 @@ a {
     #content-wrapper > div {
         align-content: center;
         max-width: 480px;
-        padding-left: 4%;
+        width: 100%;
+        margin: auto;
+
+        padding: 4%;
     }
 
     #content-wrapper > div:nth-child(odd) {}
@@ -2890,8 +2894,9 @@ a {
     #content-wrapper {
         display: flex;
         max-width: 480px;
+        width: auto;
+        
         grid-template-rows: auto;
-
         justify-content: center;
 
         margin-top: 50px;
@@ -2901,8 +2906,9 @@ a {
         display: flex;
         flex-flow: wrap;
 
-        width: 480px;
+        max-width: 480px;
         /*1397->auto*/
+        width: auto;
         height: auto;
 
         align-content: center;
@@ -2931,7 +2937,7 @@ a {
     }
 
     .post-item.noimage img {
-        width: 84.8%;
+        width: 82%;
         height: auto;
         background: rgba(0, 0, 0, 0.05);
     }
@@ -2948,7 +2954,8 @@ a {
     /*글 목록 페이징*/
     .pagination {
         max-width: 480px;
-        width: 330%;
+        width: 100%;
+        justify-content:space-between;
 
         text-align: center;
         box-sizing: border-box;
