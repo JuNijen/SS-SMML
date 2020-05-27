@@ -3481,31 +3481,17 @@ a {
     }
 
 
-    /* 중앙 컨텐츠를 위하여 리사이징 : 350px 일 경우 */
+    /* 중앙 컨텐츠를 위하여 리사이징 : 400px 일 경우 */
     @media screen and (max-width:400px) {
         #wrapper .content-container {
-            max-width: 220px;
-        }
-
-        #search input {
-            width: auto;
-        }
-
-    }
-
-    /* 중앙 컨텐츠를 위하여 리사이징 : 350px 일 경우 */
-    @media screen and (max-width:350px) {
-        #wrapper .content-container {
-            max-width: 220px;
+            max-width: 400px;
             width: auto;
             flex-flow: column;
         }
 
         #search {
-            max-width: 350;
             width: auto;
             margin-top: 30px;
         }
     }
-
 }
