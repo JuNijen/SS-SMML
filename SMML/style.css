@@ -2487,7 +2487,7 @@ a {
         max-width: 1500px;
         width: auto;
     }
-    
+
 
     #title-img .title-textimg {
         max-width: 1500px;
@@ -2535,7 +2535,7 @@ a {
         display: flex;
         flex-flow: wrap;
 
-        max-width: 1020px;
+        max-width: 850px;
         width: auto;
         margin: auto;
         height: auto;
@@ -2748,7 +2748,7 @@ a {
 
         position: absolute;
         top: 25px;
-        left: 360px;
+        left: 60px;
     }
 
     #title-img .title-textimg {
@@ -2757,7 +2757,7 @@ a {
 
         position: absolute;
         top: 163px;
-        left: 440px;
+        left: 140px;
         bottom: 106px;
     }
 
@@ -2769,7 +2769,7 @@ a {
     #title-img .line1 {
         position: absolute;
         top: 127.5px;
-        left: 660.5px;
+        left: 360.5px;
 
         width: 68px;
         opacity: 0.35;
@@ -2783,7 +2783,7 @@ a {
 
         position: absolute;
         top: 349.5px;
-        left: 579.5px;
+        left: 279.5px;
     }
 
     #title-img .line3 {
@@ -2793,7 +2793,7 @@ a {
 
         position: absolute;
         top: 366.5px;
-        left: 671.5px;
+        left: 371.5px;
     }
 
 
@@ -2806,15 +2806,15 @@ a {
         display: flex;
         flex-wrap: wrap;
 
+        max-width: 1500px;
+        width: auto;
+        margin: auto;
+
         justify-content: flex-end;
         justify-items: end;
 
         width: 28px;
         height: 60px;
-
-        position: absolute;
-        left: 1532px;
-        top: 310px;
     }
 
     #title-img .cir1 {
@@ -2849,9 +2849,67 @@ a {
 
 
 
+    #header .menu-grid {
+        width: auto;
+        height: 46px;
+        float: right;
+
+        align-content: right;
+        vertical-align: center;
+
+        margin-top: 34px;
+        margin-right: 50px;
+    }
+
+
+
 }
 
 
+
+/* 중앙 컨텐츠를 위하여 리사이징 : 900px 일 경우 */
+@media screen and (max-width:900px) {
+    #wrapper .content-container {
+        display: flex;
+        flex-flow: wrap;
+
+        max-width: 600px;
+        width: auto;
+        margin: auto;
+        height: auto;
+
+        align-content: center;
+        vertical-align: top;
+
+        justify-content: space-between;
+    }
+
+}
+
+
+
+/* 중앙 컨텐츠를 위하여 리사이징 : 600px 일 경우 */
+@media screen and (max-width:650px) {
+    #header .menu-grid {
+        display: none;
+    }
+
+    #wrapper .content-container {
+        display: flex;
+        flex-flow: wrap;
+
+        max-width: 400px;
+        width: auto;
+        margin: auto;
+        height: auto;
+
+        align-content: center;
+        vertical-align: top;
+
+        justify-content: space-between;
+    }
+
+}
 
 
 /* Media Screen - Mobile */
@@ -2864,6 +2922,7 @@ a {
 
     #header .category-menu {
         display: none;
+        padding-bottom: 85px;
     }
 
     #header .category {
@@ -3113,9 +3172,12 @@ a {
 
 
 
-    #hedaer {
+    #header {
         max-width: 480px;
         width: auto;
+        height: 70;
+        padding-bottom: 0px;
+        margin-bottom: 20px;
     }
 
     #header > a,
@@ -3125,7 +3187,8 @@ a {
 
     #header > .inner {
         max-width: 480px;
-        width: auto;
+        height: 70;
+        padding-bottom: 0px;
     }
 
 
@@ -3214,14 +3277,23 @@ a {
 
     /*이부분 체크 필요 - 스크립트로 떼울 것인지 등등*/
     #title-img .title-logo {
-        background-image: url('./images/inner_logo.png');
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
+
+        width: 360px;
+        height: 25px;
+
+        position: absolute;
+        top: 25px;
+        left: 360px;
     }
 
     #title-img .title-textimg {
         display: none;
+    }
+
+    #title-img .title-headerimg {
+        max-width: 480px;
+        width: auto;
+        height: auto;
     }
 
 
@@ -3462,6 +3534,56 @@ a {
 
     .narrow-header #header {
         height: 86px;
+    }
+
+
+    .header-bg #header > .inner {
+        max-width: 480px;
+        height: 70px;
+
+        background-image: url('./images/inner_logo.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 30%;
+    }
+
+
+    /* 중앙 컨텐츠를 위하여 리사이징 : 350px 일 경우 */
+    @media screen and (max-width:400px) {
+        #wrapper .content-container {
+            display: flex;
+            flex-flow: wrap;
+
+            max-width: 220px;
+            width: auto;
+            margin: auto;
+            height: auto;
+
+            align-content: center;
+            vertical-align: top;
+
+            justify-content: space-between;
+        }
+
+    }
+
+    /* 중앙 컨텐츠를 위하여 리사이징 : 350px 일 경우 */
+    @media screen and (max-width:350px) {
+        #wrapper .content-container {
+            display: flex;
+            flex-flow: wrap;
+
+            max-width: 220px;
+            width: auto;
+            margin: auto;
+            height: auto;
+
+            align-content: center;
+            vertical-align: top;
+
+            justify-content: space-between;
+        }
+
     }
 
 }
