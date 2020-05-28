@@ -1477,7 +1477,7 @@ a {
 }
 
 .another_category table th a {
-    text-decoration: none;
+    font-size: 13px !important;
     color: #383838;
 }
 
@@ -2913,7 +2913,7 @@ a {
     #header {
         max-width: 480px;
         width: auto;
-        height: 70;
+        height: 70px;
         padding-bottom: 0px;
         margin-bottom: 20px;
     }
@@ -2921,10 +2921,10 @@ a {
     #header .text {
         display: flex;
         color: black;
-        
+
         justify-content: center;
         padding-left: 0;
-        
+
         font-size: 15px;
     }
 
@@ -2958,22 +2958,24 @@ a {
 
     .dropdown-menu {
         color: black;
-        font-size: 15px;
+        font-size: 25px;
 
         text-align: right;
-        padding-right: 4%;
-        padding-top: 20px;
+        padding-right: 3%;
+        padding-top: 18px;
 
     }
 
     .dropdown-content {
         display: none;
         position: relative;
-
         background-color: #FFFFFFDF;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        margin-top: 30px;
+
+        min-width: 140px;
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+        margin-top: 21px;
+
+        text-align: center;
     }
 
     .dropdown-content a {
@@ -2982,6 +2984,7 @@ a {
         text-decoration: none;
         cursor: pointer;
         display: block;
+        border-top: 1px solid #e8e8e8;
     }
 
     .dropdown:hover .dropdown-content {
@@ -2996,7 +2999,7 @@ a {
 
     #header > .inner {
         max-width: 480px;
-        height: 70;
+        height: 70px;
         padding-bottom: 0px;
     }
 
@@ -3128,6 +3131,7 @@ a {
         width: 100% !important;
         height: 100%;
         margin: 0;
+        padding: 0;
     }
 
     .post-item .numbering {
@@ -3140,7 +3144,7 @@ a {
 
     .post-item .category {
         margin-right: 15px;
-        margin-bottom: 0;
+        margin-bottom: 1%;
     }
 
     .post-item .date {
@@ -3339,7 +3343,7 @@ a {
 
         text-align: center;
 
-        margin-top: 65px;
+        margin-top: 105px;
         margin-bottom: 30px;
     }
 
@@ -3531,10 +3535,11 @@ a {
         position: relative;
         overflow: hidden;
         margin: 0 auto;
+        padding: 0;
     }
 
     .narrow-header #header {
-        height: 86px;
+        height: 50px;
     }
 
 
@@ -3549,6 +3554,48 @@ a {
     #search input {
         width: 200px;
     }
+
+
+
+    /* 모바일 폰트 사이즈 고려 */
+    .another_category table th a {
+        font-size: 13px !important;
+        color: #383838;
+    }
+
+    .another_category_color_gray * {
+        color: #555555 !important;
+    }
+
+    .another_category_color_gray h4,
+    .another_category_color_gray h4 a {
+        color: #333333 !important;
+    }
+
+    .another_category h4 {
+        font-size: 14px !important;
+    }
+
+    .related-articles ul li .title {
+        padding: 10px 15px 0;
+    }
+
+    list ul li:first-child {
+        border: none;
+    }
+
+    .comments .comment-form input[type=text],
+    .comments .comment-form input[type=password],
+    .comments .comment-form textarea,
+    .comments .comment-form select {
+        font-size: 15px;
+    }
+
+    .comments .comment-form .submit,
+    .protected_form .btn {
+        float: right;
+    }
+
 
 
     /* 중앙 컨텐츠를 위하여 리사이징 : 400px 일 경우 */

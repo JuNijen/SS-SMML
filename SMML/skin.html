@@ -14,7 +14,7 @@
     <!--마우스 클릭 동작을 위하여 추가-->
     <script src="http://code.jquery.com/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
 
-    <style tye="text/css">
+    <style type="text/css">
         body,
         input,
         select,
@@ -72,6 +72,46 @@
         }
 
         </s_if_var_header-bg-color>
+
+        /* Media Screen - Mobile */
+        @media screen and (max-width:480px) {
+            .another_category table th a {
+                font-size: 13px !important;
+                color: #383838;
+            }
+
+            .another_category_color_gray * {
+                color: #555555 !important;
+            }
+
+            .another_category_color_gray h4,
+            .another_category_color_gray h4 a {
+                color: #333333 !important;
+            }
+
+            .another_category h4 {
+                font-size: 14px !important;
+            }
+
+            .related-articles ul li .title {
+                padding: 10px 15px 0;
+            }
+
+            list ul li:first-child {
+                border: none;
+            }
+
+            .comments .comment-form input[type=text],
+            .comments .comment-form input[type=password],
+            .comments .comment-form textarea,
+            .comments .comment-form select {
+                font-size: 15px;
+            }
+
+            .comments .comment-form .submit,
+            .protected_form .btn {
+                float: right;
+            }
     </style>
 </head>
 
@@ -106,7 +146,7 @@ narrow-header
                     </div>
 
                     <li class="dropdown">
-                        <div class="dropdown-menu">Menu1</div>
+                        <div class="dropdown-menu">&equiv;</div>
                         <div class="dropdown-content">
                             <a href="https://maeulmedia.org/">마을미디어홈</a>
                             <a href="#">매거진</a>
@@ -284,9 +324,9 @@ narrow-header
                                                             <span class="thum">
                                                                 <s_article_rep_thumbnail>
                                                                     <s_not_var_short-excerpt>
-                                                                        <div class="content-box-img" style="background-image:url(//i1.daumcdn.net/thumb/C180x220/?fname=[##_article_rep_thumbnail_raw_url_##])"></div>
+                                                                        <div class="content-box-img" style="background-image:url(//i1.daumcdn.net/thumb/C180x120/?fname=[##_article_rep_thumbnail_raw_url_##])"></div>
 
-                                                                        <img src="//i1.daumcdn.net/thumb/C180x220/?fname=[##_article_rep_thumbnail_raw_url_##]" alt="">
+                                                                        <img src="//i1.daumcdn.net/thumb/C180x120/?fname=[##_article_rep_thumbnail_raw_url_##]" alt="">
                                                                     </s_not_var_short-excerpt>
                                                                 </s_article_rep_thumbnail>
                                                             </span>
