@@ -281,6 +281,9 @@ a {
     margin-right: 360px;
 }
 
+.dropdown {
+    display: none;
+}
 
 #header > a,
 #header .text {
@@ -2907,8 +2910,94 @@ a {
         color: #383838;
     }
 
+    #header {
+        max-width: 480px;
+        width: auto;
+        height: 70;
+        padding-bottom: 0px;
+        margin-bottom: 20px;
+    }
+
+    #header .text {
+        display: flex;
+        color: black;
+        
+        justify-content: center;
+        padding-left: 0;
+        
+        font-size: 15px;
+    }
+
+
     #header .menu {
+        display: none;
+    }
+
+    #header .menu-grid {
+        display: contents;
+        width: auto;
+        height: 46px;
+
+        margin-top: 34px;
+        margin-right: 360px;
+    }
+
+    #header .menu-grid .text {
+        display: none;
+    }
+
+
+    .dropdown {
+        align-content: center;
+        float: right;
+
         display: block;
+        position: relative;
+        padding-right: 4%;
+    }
+
+    .dropdown-menu {
+        color: black;
+        font-size: 15px;
+
+        text-align: right;
+        padding-right: 4%;
+        padding-top: 20px;
+
+    }
+
+    .dropdown-content {
+        display: none;
+        position: relative;
+
+        background-color: #FFFFFFDF;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        margin-top: 30px;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 10px;
+        text-decoration: none;
+        cursor: pointer;
+        display: block;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1
+    }
+
+
+
+    #header > .inner {
+        max-width: 480px;
+        height: 70;
+        padding-bottom: 0px;
     }
 
     #header > .inner > .title,
@@ -2980,6 +3069,7 @@ a {
 
     .cover-list ul li .category {
         margin-right: 15px;
+        padding-top: 20px;
         margin-bottom: 0;
     }
 
@@ -3146,26 +3236,6 @@ a {
 
 
 
-    #header {
-        max-width: 480px;
-        width: auto;
-        height: 70;
-        padding-bottom: 0px;
-        margin-bottom: 20px;
-    }
-
-    #header > a,
-    #header .text {
-        display: none;
-    }
-
-    #header > .inner {
-        max-width: 480px;
-        height: 70;
-        padding-bottom: 0px;
-    }
-
-
 
     /* 메뉴 파트 */
     .category-group,
@@ -3269,7 +3339,7 @@ a {
 
         text-align: center;
 
-        margin-top: 40px;
+        margin-top: 65px;
         margin-bottom: 30px;
     }
 
