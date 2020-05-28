@@ -2798,18 +2798,8 @@ a {
     별도의 이미지파일이 없어 수동 구현.
 */
     #title-img .cir-grid {
-        display: flex;
-        flex-wrap: wrap;
-
         max-width: 1500px;
-        width: auto;
-        margin: auto;
-
-        justify-content: flex-end;
-        justify-items: end;
-
-        width: 28px;
-        height: 60px;
+        left: 30px;
     }
 
     #title-img .cir1 {
@@ -2861,6 +2851,7 @@ a {
     #search {
         max-width: 1500px;
         margin-top: 30px;
+        width: auto;
     }
 }
 

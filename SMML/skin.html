@@ -585,22 +585,6 @@ narrow-header
         </div>
 
 
-        <!--이곳에 더보기 기능 추가 예정-->
-        <!--
-        <s_paging>
-            <div class="pagination">
-                <div class="inner">
-                    <a [##_prev_page_##] class="prev [##_no_more_prev_##]"><span>이전</span></a>
-                    <s_paging_rep>
-                        <a [##_paging_rep_link_##]>[##_paging_rep_link_num_##]</a>
-                    </s_paging_rep>
-                    <a [##_next_page_##] class="next [##_no_more_next_##]"><span>다음</span></a>
-                </div>
-            </div>
-        </s_paging>
--->
-        <!--search-->
-
 
         <!--지역별로 확인하세요-->
         <div id="category-text">
@@ -645,24 +629,17 @@ narrow-header
         </div>
 
 
-        <div id="wrapper">
-            <div class="content-container">
-                <div id="search">
-                    <s_search>
-                        <input type="text" name="[##_search_name_##]" value="[##_search_text_##]" placeholder="검색어를 입력하세요." onkeypress="if (event.keyCode == 13) { [##_search_onclick_submit_##] }">
-                        <button type="submit" onclick="[##_search_onclick_submit_##]">검색</button>
-                    </s_search>
-                </div>
+        
+        <div class="content-container">
+            <div id="search">
+                <s_search>
+                    <input type="text" name="[##_search_name_##]" value="[##_search_text_##]" placeholder="검색어를 입력하세요." onkeypress="if (event.keyCode == 13) { [##_search_onclick_submit_##] }">
+                    <button type="submit" onclick="[##_search_onclick_submit_##]">검색</button>
+                </s_search>
             </div>
         </div>
 
-
-
-        <s_if_var_view-btn-top>
-            <a href="#top" class="btn-top hideanim"><i class="fas fa-arrow-up"></i></a>
-        </s_if_var_view-btn-top>
-
-
+        
         <!--footer-->
         <footer id="footer">
             <div class="inner">
@@ -738,5 +715,4 @@ narrow-header
             }
         </script>
     </s_t3>
-
 </html>
